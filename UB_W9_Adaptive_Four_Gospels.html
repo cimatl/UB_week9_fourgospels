@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>UB Week 9 Adaptive Pre-Class — NT &amp; Four Gospels</title>
+<style>
+:root {--bg:#f7f4ee;--card:#fff;--ink:#24211c;--muted:#6f6a61;--line:#ddd5c9;--accent:#4f5f8f;--accent2:#7d5f3f;--soft:#ece7dc;}
+*{box-sizing:border-box} body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+header{background:#171510;color:#fff;padding:22px 28px;position:sticky;top:0;z-index:20;box-shadow:0 4px 18px #0002} .top{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:1180px;margin:auto} h1{font-size:24px;margin:0} .subtitle{font-size:14px;color:#d6d0c4;margin-top:4px} button,.pill{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;cursor:pointer} .lang button{background:#2b2822;color:#fff;border-color:#555} .lang button.active{background:#fff;color:#171510}
+nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:84px;z-index:10;overflow:auto;white-space:nowrap} nav .tabs{max-width:1180px;margin:auto;display:flex;gap:8px;padding:10px} nav button{border:0;background:transparent;color:var(--muted);font-weight:700} nav button.active{color:var(--accent);background:#eef0fb}
+main{max-width:1180px;margin:28px auto;padding:0 18px} .hero{display:grid;grid-template-columns:1.4fr .9fr;gap:18px;margin-bottom:18px} .card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 8px 24px #0000000d} h2{font-size:28px;margin:0 0 8px} h3{font-size:21px;margin:22px 0 8px} h4{font-size:16px;margin:18px 0 6px;color:#34302b} .muted{color:var(--muted)} .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px} .mini{background:var(--soft);border-radius:16px;padding:14px} .core{background:#f1efe9;border-left:5px solid var(--accent);padding:14px 16px;margin:14px 0;border-radius:12px} .outline{padding-left:16px;border-left:3px solid #ddd;color:#3b352d} .label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:800} .tabPanel{display:none} .tabPanel.active{display:block} details.acc{background:#fff;border:1px solid var(--line);border-radius:18px;margin:12px 0;overflow:hidden} details.acc summary{cursor:pointer;padding:16px 18px;font-weight:800;background:#fbfaf7} .accBody{padding:4px 20px 18px} .accBody p{margin:10px 0} table{border-collapse:collapse;width:100%;background:#fff;border-radius:14px;overflow:hidden} th,td{border:1px solid var(--line);padding:12px;vertical-align:top} th{background:#f0ece3;text-align:left} textarea{width:100%;min-height:110px;border:1px solid var(--line);border-radius:16px;padding:14px;font:inherit;background:#fff} .checklist label,.q label{display:block;background:#f4f1ea;border:1px solid var(--line);border-radius:12px;padding:10px;margin:8px 0} .q{border:1px solid var(--line);border-radius:18px;padding:16px;margin:14px 0;background:#fff} .explain{display:none;color:var(--muted);font-size:14px} .score{font-size:20px;font-weight:900;color:var(--accent)} .ko{display:none} body.korean .en{display:none!important} body.korean .ko{display:revert} .koContent{display:none} body.korean .enContent{display:none!important} body.korean .koContent{display:block!important} .enContent{display:block} @media(max-width:800px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}nav{top:106px}}
+</style>
+</head>
+<body>
+<header><div class="top"><div><h1><span class="en">Understanding the Bible — Week 9</span><span class="ko">성경의 이해 — 9주차</span></h1><div class="subtitle"><span class="en">Adaptive Pre-Class App · New Testament &amp; The Four Gospels</span><span class="ko">적응형 수업 전 앱 · 신약성경과 사복음서</span></div></div><div class="lang"><button class="active" id="enBtn">English</button><button id="koBtn">한국어</button></div></div></header>
+<nav><div class="tabs"><button class="active" data-en="Map" data-ko="지도" data-tab="t0">Map</button><button data-en="Manuscript" data-ko="원고" data-tab="t1">Manuscript</button><button data-en="Core Texts" data-ko="핵심 본문" data-tab="t2">Core Texts</button><button data-en="Mark" data-ko="마가" data-tab="t3">Mark</button><button data-en="Matthew" data-ko="마태" data-tab="t4">Matthew</button><button data-en="Luke" data-ko="누가" data-tab="t5">Luke</button><button data-en="John" data-ko="요한" data-tab="t6">John</button><button data-en="MCQ" data-ko="퀴즈" data-tab="t7">MCQ</button><button data-en="Reflection" data-ko="성찰" data-tab="t8">Reflection</button></div></nav>
+<main>
+<section class="hero"><div class="card"><h2><span class="en">The Four Gospels as Formed Witnesses</span><span class="ko">형성된 증언으로서의 사복음서</span></h2><p class="en">Week 9 moves through a learning map: the New Testament world leads from covenant memory to written witness and canon; Gospel tradition moves from Jesus’ ministry to proclamation and written Gospels; the Synoptic Problem teaches how shared tradition becomes distinct witness; and the four Gospels form readers through Mark’s cross-shaped service, Matthew’s fulfillment and mission, Luke’s mercy and reversal, and John’s incarnation and abiding life.</p><p class="ko">9주차는 하나의 학습 지도를 따라 진행됩니다. 신약의 세계는 언약 기억에서 기록된 증언과 정경으로 이어지고, 복음서 전승은 예수의 사역에서 선포와 기록된 복음서로 이동합니다. 공관복음 문제는 공유된 전승이 어떻게 각 복음서의 고유한 증언이 되는지를 보여 주며, 사복음서는 마가의 십자가적 섬김, 마태의 성취와 선교, 누가의 긍휼과 역전, 요한의 성육신과 거함의 생명으로 독자를 형성합니다.</p></div><div class="card"><h3><span class="en">Fourfold Gospel Witness</span><span class="ko">사복음서의 네 가지 증언</span></h3><div class="grid"><div class="mini"><b>Mark<br/><span class="ko">마가</span></b><br/><span class="en">Cross · Service</span><span class="ko">십자가 · 섬김</span></div><div class="mini"><b>Matthew<br/><span class="ko">마태</span></b><br/><span class="en">Fulfillment · Mission</span><span class="ko">성취 · 선교</span></div><div class="mini"><b>Luke<br/><span class="ko">누가</span></b><br/><span class="en">Mercy · Reversal</span><span class="ko">긍휼 · 역전</span></div><div class="mini"><b>John<br/><span class="ko">요한</span></b><br/><span class="en">Logos · Abiding</span><span class="ko">로고스 · 거함</span></div></div></div></section>
+<section class="tabPanel active" id="t0"><div class="enContent"><div class="card"><h2>Learning Map</h2><p><strong>Guiding sentence:</strong> the New Testament Gospels are formed witnesses that preserve and interpret the memory of Jesus in order to form communities in the way of cross, fulfillment, mercy, and incarnation.</p><table><tr><th>Module</th><th>Learning Movement</th><th>Formation Aim</th></tr><tr><td>NT World</td><td>Covenant memory → written witness → canon</td><td>Read the NT as historical, literary, covenantal formation.</td></tr><tr><td>Gospel Tradition</td><td>Jesus’ ministry → proclamation → written Gospels</td><td>Avoid both transcript literalism and free invention.</td></tr><tr><td>Synoptic Problem</td><td>Shared tradition → distinct witness</td><td>Read differences as interpretive signals.</td></tr><tr><td>Four Gospels</td><td>Mark · Matthew · Luke · John</td><td>Cross, fulfillment, mercy, incarnation.</td></tr></table></div></div><div class="koContent ko"><div class="card"><h2>학습 지도</h2><p><strong>안내 문장:</strong> 신약 복음서는 예수의 기억을 보존하고 해석하여 십자가, 성취, 긍휼, 성육신의 길로 공동체를 형성하는 기록된 증언입니다.</p><table><tr><th>모듈</th><th>학습의 이동</th><th>형성 목표</th></tr><tr><td>신약의 세계</td><td>언약 기억 → 기록된 증언 → 정경</td><td>신약을 역사적·문학적·언약적 형성으로 읽는다.</td></tr><tr><td>복음서 전승</td><td>예수의 사역 → 선포 → 기록된 복음서</td><td>현대식 속기록처럼 읽는 방식과 자유로운 창작물처럼 읽는 방식을 모두 피한다.</td></tr><tr><td>공관복음 문제</td><td>공유 전승 → 고유한 증언</td><td>차이를 오류가 아니라 해석적 신호로 읽는다.</td></tr><tr><td>사복음서</td><td>마가 · 마태 · 누가 · 요한</td><td>십자가, 성취, 긍휼, 성육신의 네 증언을 함께 배운다.</td></tr></table></div></div></section>
+<section class="tabPanel" id="t1"><div class="enContent"><div class="card"><h2>Full Integrated Manuscript</h2><details class="acc"><summary>Opening Orientation: How to Read the New Testament and the Four Gospels</summary><div class="accBody"><p>Students, today we begin not with a single Gospel, and not even with a single story about Jesus, but with the larger movement by which the New Testament became a written witness for communities learning to follow Jesus. The aim of this module is not simply to memorize names, dates, theories, and terms. The deeper aim is to learn how to read the New Testament as covenantal memory, historical witness, literary testimony, and community formation.</p>
+<p>The first mistake we must avoid is imagining that the New Testament appeared suddenly as a finished book. The early Christian movement did not begin with a bound volume. It began with proclamation, worship, memory, teaching, suffering, mission, and embodied community. The followers of Jesus remembered what Jesus said and did; they proclaimed his death and resurrection; they taught new communities; they interpreted the meaning of Jesus in light of Israel's Scriptures; and over time, this living witness took durable written form.</p>
+<p>The second mistake is flattening the four Gospels into one harmonized biography. Matthew, Mark, Luke, and John do not give us four photocopies of the same document. They give us four literary witnesses. They preserve one Jesus tradition, but they do so through distinct movements: Mark moves us toward the cross; Matthew moves us from Israel's story to kingdom instruction and mission; Luke moves mercy toward the poor, outsiders, and nations; John moves from the eternal Logos into flesh, signs, glory, belief, life, and abiding witness.</p>
+<p>In this manuscript, we will read vertically and horizontally. Vertical reading means allowing each Gospel to speak in its own literary world. We ask: How does this Gospel begin? How does it end? What does it repeat? Where does Jesus move? Who is centered? Who is marginalized? What kind of community is formed? Horizontal reading means comparing parallel passages side by side. We ask: What is shared? What is changed? What is added? What is omitted? What does each difference reveal about the evangelist's purpose?</p>
+<p>This module adds one additional discipline. We will not read these texts as static containers of religious information. We will ask how setting, identity, and action move together: where Jesus is located, who is being revealed or formed, and what kind of response becomes possible. In the Gospels, identity is not abstract. Jesus’ identity is disclosed in movement: wilderness, house, road, sea, synagogue, table, Temple, cross, tomb, and community.</p>
+<p>The guiding sentence for the whole module: the New Testament Gospels are formed witnesses that preserve and interpret the memory of Jesus in order to form communities in the way of cross, fulfillment, mercy, and incarnation.</p></div></details>
+<details class="acc"><summary>Part II. Historical, Social, and Religious World of the New Testament</summary><div class="accBody"><p>The New Testament was not written in a timeless vacuum. Its language, conflicts, images, community questions, and theological claims arise from real historical settings. To read responsibly, we must enter the world of empire, synagogue, Temple, household, city, road, prison, marketplace, suffering, mission, and hope.</p>
+<p>The first-century world can be divided pedagogically into three movements. The first third, roughly 6 BC to AD 33, includes the life and ministry of Jesus. The second third, AD 34 to 66, includes apostolic preaching and the period of Paul’s letters. The final third, AD 67 to 100, includes the composition of most written Gospels. This timeline reveals an important fact: Paul’s letters are earlier than the written Gospels, even though the Gospels appear first in the New Testament canon.</p>
+<p>The political world was shaped by Roman rule and the Herodian dynasty. Crucifixion belongs to this imperial world — it was not merely a method of death but a public technology of shame and control. Therefore, when Mark reveals Jesus’ identity at the cross, he is locating Jesus in the lowest place of imperial violence and showing that divine identity is disclosed there.</p>
+<p>AD 70, the destruction of the Jerusalem Temple, functions as a major historical fault line. The Temple was a center of worship, sacrifice, priestly authority, national identity, pilgrimage, and sacred memory. Its destruction created theological, social, political, and symbolic crisis. After AD 70, both Judaism and Christianity had to negotiate identity in a radically changed world.</p>
+<p>Judaism before AD 70 was diverse. Pharisees emphasized written and oral Law and survived the Temple’s destruction, later contributing to rabbinic Judaism. Sadducees were priestly and aristocratic and largely disappeared after AD 70. Essenes were separatist and apocalyptic, often linked to Qumran. Students must not reduce the Pharisees to villains — Gospel conflicts should be read within the broader diversity of Jewish interpretation and communal authority.</p>
+<p>The linguistic world was Koine Greek. The New Testament speaks in the common Greek of the Mediterranean world, but it remembers in Jewish categories. Its Greek carries Semitic influence, Aramaic traces, Hebrew patterns, and Israel’s scriptural imagination.</p>
+<p>Historical context is not background decoration. It is the lived setting in which identity and vocation are formed. Mark’s crisis, Matthew’s Jewish-Christian negotiation, Luke’s social stratification and Gentile-expanding horizon, and John’s symbolic late first-century community context all shape each Gospel’s witness.</p></div></details>
+<details class="acc"><summary>Part III. Formation of the Gospel Tradition</summary><div class="accBody"><p>The written Gospels did not appear as instant written biographies during Jesus’ lifetime. They developed through a three-stage movement: the public ministry of Jesus, apostolic preaching, and written Gospel composition. This helps us avoid two extremes: treating the Gospels as modern transcripts, or treating them as free inventions detached from Jesus’ ministry.</p>
+<p>The first stage is the public ministry of Jesus. This includes his words, deeds, healings, exorcisms, parables, conflicts, symbolic actions, table fellowship, calling of disciples, movement through Galilee and Judea, and final journey toward Jerusalem. Memories of Jesus began in actual places, among actual people, in the concrete world of first-century Palestine.</p>
+<p>The second stage is apostolic preaching after the resurrection. The resurrection did not erase Jesus’ earthly ministry; it transformed the way his followers understood it. They now proclaimed Jesus as the crucified and risen one. This was an oral period of preaching, worship, catechesis, mission, and community instruction.</p>
+<p>The third stage is the composition of the written Gospels, roughly AD 65 to 100. As first-generation apostolic figures passed away and communities expanded, permanent written witnesses became necessary. The evangelists gathered inherited traditions and shaped them into organized narratives — selecting, arranging, emphasizing, omitting, adapting, and interpreting material.</p>
+<p>The term “pericope” names a distinct unit of Gospel tradition: a parable, miracle story, conflict story, pronouncement story, passion scene, or resurrection appearance. But a pericope gains fuller meaning inside its Gospel. A healing in Mark may reveal authority and secrecy. A teaching in Matthew may reveal kingdom righteousness. A parable in Luke may reveal mercy toward the outsider.</p>
+<p>The phrase “theologized history” is useful if taught carefully. It does not mean the Gospels are fictional. It means historical memory is presented through theological interpretation and literary arrangement. The Gospels are rooted in Jesus’ public ministry, but they present that ministry through the lens of resurrection proclamation and community formation.</p></div></details>
+<details class="acc"><summary>Part IV. The Synoptic Gospels and the Synoptic Problem</summary><div class="accBody"><p>Matthew, Mark, and Luke are called the Synoptic Gospels because they can be “seen together.” They share similar wording, story order, structure, and many of the same episodes. John stands apart because its chronology, style, discourse pattern, symbolism, and theological presentation differ significantly from the Synoptic pattern.</p>
+<p>The Synoptic Problem is the scholarly question of how Matthew, Mark, and Luke are literarily related. Why do they share so much material? Why do they often follow the same order? Why do they sometimes use very similar Greek wording? Why do Matthew and Luke share material not found in Mark? The similarities are too precise to be explained by independent memory alone — shared wording and rigid sequence suggest some kind of literary relationship.</p>
+<p>The Triple Tradition refers to material found in all three Synoptic Gospels. The Double Tradition refers to material shared by Matthew and Luke but absent from Mark. The dominant explanation for Double Tradition material is the Q hypothesis. Q, from the German Quelle (source), is a hypothetical sayings source used to explain Matthew-Luke material absent from Mark. No manuscript of Q has been discovered, so Q must be taught carefully as a scholarly hypothesis, not as a recovered document.</p>
+<p>Material unique to Matthew is called M; material unique to Luke is called L. The Two-Source Theory argues that Matthew and Luke used Mark and Q, while also preserving unique material. In simple form: Mark + Q + M = Matthew; Mark + Q + L = Luke. This model explains why Matthew and Luke share so much of Mark, why they share non-Markan teaching material, and why each has unique material.</p>
+<p>Marcan Priority means Mark was likely written first and served as a primary source for Matthew and Luke. Mark is shorter, its Greek is often more colloquial, it has little unique material, and Matthew and Luke rarely agree together against Mark’s sequence. The strongest argument is literary: Matthew and Luke often appear to expand, polish, clarify, and theologically shape Mark.</p></div></details>
+<details class="acc"><summary>Part V. Major Evidence and Theories of the Synoptic Problem</summary><div class="accBody"><p>Shared wording is significant because Matthew, Mark, and Luke often use similar or nearly identical Greek phrasing. Oral tradition can preserve themes and memorable sayings, but extended patterns of similar Greek wording suggest literary dependence. Shared order is also crucial — the Synoptics often place events in the same sequence, and even when Matthew or Luke departs from Mark’s order, they rarely agree together against Mark.</p>
+<p>The statistics sharpen the point. Mark has 661 verses. Matthew has 1,068. Luke has 1,149. Matthew retains approximately 80 percent of Mark, while Luke retains approximately 65 percent. Mark is shorter, yet most of Mark appears inside Matthew and Luke.</p>
+<p>The Two-Source Theory remains the main model. Its strength is explanatory scope: it explains Mark as narrative skeleton, Q as shared sayings material, and M/L as distinctive traditions. Its difficulty is accounting for Minor Agreements — places where Matthew and Luke agree against Mark in Triple Tradition material.</p>
+<p>Q must be handled with scholarly humility. It is hypothetical. We can say that Q may explain Matthew-Luke material absent from Mark. We should not speak as if we can confidently reconstruct a full Q community. Importantly, Q includes Christological content — Jesus as rejected Son of Man, uniquely related to the Father, coming judge, and Lord whose words demand obedience.</p>
+<p>The Griesbach Hypothesis provides an alternative: Matthew first, Luke using Matthew, and Mark later abbreviating both. Its strength is alignment with traditional canonical order. Its difficulty is explaining why Mark would omit so much major teaching material if he had Matthew and Luke available.</p>
+<p>Redaction criticism is especially important. If Matthew changes Mark’s baptism wording from “You are my beloved Son” to “This is my beloved Son,” that change may signal Matthew’s public presentation of Jesus’ identity to the community. Gospel differences are not merely inconsistencies; they are often theological signals.</p></div></details>
+<details class="acc"><summary>Part VI. Why Four Gospels?</summary><div class="accBody"><p>The early church preserved four distinct Gospel accounts rather than blending them into one harmonized super-Gospel. This decision matters because each Gospel gives a distinct literary and community-forming witness to Jesus. A harmonized Gospel tries to combine Matthew, Mark, Luke, and John into one continuous narrative — this can be useful for basic comparison, but it becomes dangerous when it erases each evangelist’s distinctive voice.</p>
+<p>Mark gives us the cruciform Gospel. It presents Jesus as the suffering Son of Man whose identity cannot be rightly understood apart from the cross. Mark prevents triumphalism. Matthew gives us the Gospel of fulfillment, teaching, righteousness, and community formation. Matthew prevents rootlessness — Jesus does not appear outside Israel’s story. Luke gives us the Gospel of mercy, reversal, Spirit, prayer, and universal mission. Luke prevents exclusion. John gives us the Gospel of the Logos made flesh. John prevents reductionism.</p>
+<p>If we had only one Gospel, our view of Jesus would be thinner. The four Gospels also form different kinds of communities. Mark forms a cruciform community that follows Jesus through suffering. Matthew forms a teaching community of righteousness, mercy, reconciliation, and mission. Luke forms a Spirit-led community of mercy, reversal, prayer, and inclusion. John forms an abiding community of belief, love, life, and witness.</p>
+<p>The matter can be stated clearly: each Gospel forms readers through a different literary and communal movement. Mark leads readers to the cross. Matthew leads readers into kingdom instruction. Luke leads readers toward the margins and nations. John leads readers into abiding life. The truth of Jesus is too rich to be carried by one Gospel voice alone.</p></div></details>
+
+
+
+
+<details class="acc"><summary>Part VII. Final Synthesis: Reading the Four Gospels Together</summary><div class="accBody"><p>We now bring the whole module together. We began with the New Testament as covenantal memory and written witness. We moved through the historical world of the New Testament, the formation of Gospel tradition, the Synoptic Problem, the major Synoptic theories, and the distinct portraits of Mark, Matthew, Luke, and John. The final question is: How should students read the four Gospels together without flattening them?</p>
+<p>The early church preserved four distinct Gospel accounts rather than blending them into one harmonized super-Gospel. This means Gospel plurality is not a weakness to be solved. It is a canonical gift to be received. Differences may raise historical questions, but they also reveal how each evangelist shapes the memory of Jesus for a specific community.</p>
+<p>The fourfold witness gives us a richer portrait than any single Gospel could carry alone. Mark gives us the suffering Son of Man: cross, secrecy, failed discipleship, service. Matthew gives us the New Moses and Emmanuel: fulfillment, five discourses, kingdom righteousness, ekklesia. Luke gives us the Spirit-led Savior and universal Lord: poor, women, outsiders, Holy Spirit, prayer, journey to Jerusalem. John gives us the Logos made flesh: signs, glory, belief, life, abiding, revelation of the Father.</p>
+<p>Harmonization is not enough. It may make the story smoother, but fourfold reading makes the witness richer. Harmonization can erase Mark’s urgency, dilute Matthew’s teaching architecture, generalize Luke’s mercy-shaped journey, and force John’s symbolic depth into Synoptic categories. Differences should first be read as meaningful signals.</p>
+<p>Vertical and horizontal reading remain the two essential practices. Read Mark vertically before comparing Mark with Matthew and Luke. Read each Gospel as its own world before importing from the others. Then read horizontally to see how shared tradition becomes distinct witness.</p>
+<p>The Gospels are theologized history. They are historically rooted in Jesus’ ministry, death, and resurrection proclamation, and they are interpretively shaped through faith, literary arrangement, and community formation.</p>
+<p>The four Gospels also form four dimensions of discipleship. Mark forms cruciform service. Matthew forms kingdom righteousness. Luke forms Spirit-led mercy. John forms abiding belief and witness. Together, they resist reduction — they prevent us from making Jesus only a teacher, only a healer, only a suffering victim, only a divine figure, or only a symbol of private spirituality.</p>
+<p>Emic reading is crucial. To read emically is to let each Gospel’s own literary world teach us how to see Jesus. Mark asks: How does the cross reveal who Jesus truly is? Matthew asks: How does Jesus fulfill Israel and form the kingdom community? Luke asks: How does Jesus’ Spirit-led journey bring mercy to the margins? John asks: How does the Logos made flesh move readers into belief, life, and abiding witness?</p></div></details>
+<details class="acc"><summary>Appendix A. Fourfold Gospel Teaching Matrix</summary><div class="accBody"></div></details>
+<details class="acc"><summary>Appendix B. Essential Glossary for Students</summary><div class="accBody"></div></details>
+<details class="acc"><summary>Appendix C. Capstone Assignment</summary><div class="accBody"><p>Reading the Four Gospels Without Flattening Them</p>
+<h4>Prompt</h4>
+<p>Write a 1,200–1,500 word essay answering this question: Why did the early church preserve four distinct Gospels, and how does reading them vertically and horizontally deepen our understanding of Jesus?</p>
+<h4>Required Elements</h4>
+<p>A definition of the Synoptic Gospels.</p>
+<p>A brief explanation of the Synoptic Problem.</p>
+<p>A summary of Marcan Priority and the Two-Source Theory.</p>
+<p>One paragraph each on Mark, Matthew, Luke, and John.</p>
+<p>A discussion of why harmonization can be useful but insufficient.</p>
+<p>A final reflection on how fourfold Gospel reading forms communities.</p>
+<h4>Grading Rubric</h4></div></details></div></div><div class="koContent ko"><div class="card"><h2>통합 한국어 원고</h2>
+<details class="acc"><summary>시작 오리엔테이션: 신약성경과 네 개의 복음서를 어떻게 읽을 것인가</summary><div class="accBody">
+<p>학생 여러분, 오늘 우리는 단일한 복음서나 예수에 관한 단일한 이야기로 시작하지 않고, 신약성경이 예수를 따르기를 배우는 공동체들을 위한 기록된 증언이 되어간 더 큰 움직임으로 시작합니다.</p>
+<p>이 모듈의 목적은 단순히 이름, 연대, 이론 및 용어를 암기하는 것이 아닙니다.</p>
+<p>더 깊은 목적은 신약성경을 언약적 기억, 역사적 증거, 문학적 증언, 그리고 공동체 형성으로 읽는 방법을 배우는 것입니다.</p>
+<p>우리가 피해야 할 첫 번째 실수는 신약성경이 완성된 책으로 갑자기 나타났다고 상상하는 것입니다.</p>
+<p>초기 기독교 운동은 제본된 책으로 시작되지 않았습니다.</p>
+<p>그것은 선포, 예배, 기억, 가르침, 고난, 선교, 그리고 체화된 공동체로 시작되었습니다.</p>
+<p>예수를 따르는 자들은 예수께서 말씀하시고 행하신 것을 기억했고, 그의 죽음과 부활을 선포했으며, 새로운 공동체들을 가르쳤습니다.</p>
+<p>그들은 이스라엘의 성경에 비추어 예수의 의미를 해석했습니다.</p>
+<p>그리고 시간이 지남에 따라, 이 살아있는 증언은 내구성 있는 기록된 형태를 취하게 되었습니다.</p>
+<p>두 번째 실수는 네 개의 복음서를 조화된 하나의 전기로 평면화하는 것입니다.</p>
+<p>마태, 마가, 누가, 요한은 우리에게 동일한 문서의 네 장의 복사본을 주지 않습니다.</p>
+<p>그들은 우리에게 네 가지 문학적 증언을 제공합니다. 그들은 하나의 예수 전승을 보존하지만, 구별된 움직임을 통해 그렇게 합니다: 마가는 우리를 십자가를 향해 움직입니다.</p>
+<p>마태는 우리를 이스라엘의 이야기에서 하나님 나라의 가르침과 선교로 움직입니다; 누가는 자비를 가난한 자, 경계 밖의 외부인들, 그리고 열방을 향해 움직입니다.</p>
+<p>요한은 영원한 로고스에서 육신, 표적, 영광, 믿음, 생명, 그리고 거하는 증언으로 움직입니다.</p>
+<p>이 원고에서 우리는 수직적이고 수평적으로 읽을 것입니다. 수직적 읽기란 각 복음서가 고유한 문학적 세계 속에서 말하도록 허용하는 것을 의미합니다.</p>
+<p>우리는 묻습니다: 이 복음서는 어떻게 시작하는가? 어떻게 끝나는가? 무엇을 반복하는가? 예수는 어디로 움직이는가?</p>
+<p>누구를 중심에 두는가? 누구를 변두리로 밀어내는가? 어떤 공동체가 형성되는가?</p>
+<p>수평적 읽기란 평행 본문들을 나란히 비교하는 것을 의미합니다. 우리는 묻습니다: 무엇이 공유되는가? 무엇이 변경되는가? 무엇이 추가되는가?</p>
+<p>무엇이 생략되는가? 각각의 차이점은 복음서 기자의 목적에 대해 무엇을 드러내는가?</p>
+<p>이 읽기 방식은 하나의 추가적인 훈련을 더합니다. 우리는 이 텍스트들을 종교적 정보의 정적인 그릇으로 읽지 않을 것입니다.</p>
+<p>우리는 위치, 정체성, 행동이 어떻게 함께 움직이는지 물을 것입니다 — 예수는 어디에 위치하는가?</p>
+<p>누구가 계시되거나 형성되고 있는가? 어떤 행동이 가능해지는가? 복음서에서 정체성은 추상적인 것이 아닙니다.</p>
+<p>예수의 정체성은 공간적 움직임 속에서 공개됩니다: 광야, 집, 길, 바다, 회당, 식탁, 성전, 십자가, 무덤, 그리고 공동체.</p>
+<p>전체 모듈을 위한 핵심 문장: 신약의 복음서들은 십자가, 성취, 자비, 그리고 성육신의 길로 공동체를 형성하기 위해 예수에 대한 기억을 보존하고 해석하는 형성된 증언들입니다.</p>
+</div></details>
+<details class="acc"><summary>제1부. 신약성경 서론: 언약적 기억, 기록된 증언, 그리고 정경의 형성</summary><div class="accBody">
+<p>우리는 신약성경 전체로 시작한다. 왜냐하면 네 개의 복음서가 더 큰 정경적 모음집에 속해 있기 때문이다.</p>
+<p>신약성경은 초기 기독교 문헌들의 무작위적인 선집이 아니다.</p>
+<p>그것은 예배, 가르침, 선포, 그리고 공동체 형성을 위한 규범이 된 27권의 문헌 집합이다.</p>
+<p>하지만 그것이 책의 모음집이 되기 전에, "testament(언약)"라는 단어는 언약을 가리켰다 — 인류 및 이스라엘과 맺으신 하나님의 구속력 있고 신실하며 삶을 질서 지우는 관계.</p>
+<p>이 점은 중요하다. "신약성경"은 문학적 모음집을 지칭하기 전에 먼저 언약적 실재를 명명한다.</p>
+<p>노아, 아브라함, 모세, 그리고 이스라엘과 맺으신 하나님의 다루심은 초기 그리스도인들이 예수를 해석하는 그 언약적 기억을 형성한다.</p>
+<p>그리스도인들은 예수의 죽음과 부활을 하나님의 언약적 약속이 갱신되고 성취되며 이방인들을 포함하도록 확장되는 결정적인 사건으로 이해하게 되었다.</p>
+<p>그러므로 신약성경을 소개할 때 우리는 "여기에 종교 교과서가 있다"고 말하며 시작해서는 안 된다.</p>
+<p>우리는 "여기에 예수에 의해 형성된 언약적 움직임의 기록된 증언이 있다"고 말해야 한다.</p>
+<p>신약성경은 여러 장르를 포함한다. 복음서들은 예수의 말씀, 행적, 죽음, 그리고 부활을 보존하고 해석한다.</p>
+<p>사도행전은 성령의 인도를 받는 교회의 확장을 서술한다. 서신서들은 공동체를 가르치고, 교정하고, 격려하며, 형성한다.</p>
+<p>요한계시록은 압박 아래 있는 공동체들에게 상징적인 소망을 준다. 장르가 의미를 형성하기 때문에 장르는 중요하다.</p>
+<p>신약성경은 왜 기록되었는가? 그 대답은 믿음이 실패했기 때문이 아니다.</p>
+<p>대답은 살아있는 선포가 내구성 있는 형태를 필요로 했기 때문이다. 예수 자신은 어떠한 글도 남기지 않았다.</p>
+<p>가장 초기 공동체들은 먼저 예수의 메시지를 중심으로 선포하고, 기억하고, 예배하고, 지시하며, 공동체를 형성했다.</p>
+<p>목격자들이 세상을 떠나고, 선교가 팔레스타인을 넘어 확장되며, 교회들이 신뢰할 수 있는 가르침을 필요로 함에 따라 기록이 필요해졌다.</p>
+<p>기록은 기억을 보존하고 증언을 확장했다.</p>
+<p>그렇다면 그 움직임은 "예수에서 즉각적인 책으로"가 아니다. 그 움직임은 이러하다: 예수의 공생애 사역 → 따르는 자들 사이의 기억 → 부활 이후의 선포 → 공동체 가르침과 예배 → 기록된 복음서와 서신서 → 회람, 인정, 그리고 정경화.</p>
+<p>몇 가지 방법론이 우리가 이 질문들에 대답하는 것을 돕는다. 역사 비평은 텍스트를 원래의 설정에 위치시킨다.</p>
+<p>본문 비평은 가장 가능성 있는 표현을 결정하기 위해 사본들을 비교한다. 자료 비평은 저자가 어떤 자료를 사용했을지 묻는다.</p>
+<p>편집 비평은 저자가 물려받은 자료를 어떻게 형성했는지 연구한다. 사회 비평은 텍스트의 사회적 세계가 어떻게 중요한지 묻는다.</p>
+<p>정경 형성 역시 시간이 지남에 따라 발전했다. 초대 교회는 사도적 기원을 지니고, 공동체적 중요성을 가지며, 신앙의 규칙과 일치하는 글들을 인정했다.</p>
+<p>신약성경은 이 기록들이 사도적 증언을 전달하고 전수받은 신앙과 연속성 안에서 공동체를 형성했기 때문에 정경이 되었다.</p>
+<div class="core"><strong>핵심 문장:</strong> 신약성경은 초기 기독교 운동의 살아있는 언약적 증언이 다양한 장르를 통해 보존되고 공동체 형성에 권위 있는 것으로 인정된 기록된 형태이다.</div>
+</div></details>
+<details class="acc"><summary>제2부. 신약성경의 역사적, 사회적, 종교적 세계</summary><div class="accBody">
+<p>신약성경은 시대를 초월한 진공 상태에서 기록되지 않았다.</p>
+<p>그것의 언어, 갈등, 이미지, 공동체의 질문들, 그리고 신학적 주장들은 실제 역사적 배경에서 비롯된다.</p>
+<p>책임감 있게 읽기 위해, 우리는 제국, 회당, 성전, 가정, 도시, 길, 감옥, 시장, 고난, 선교, 그리고 소망의 세계로 들어가야 한다.</p>
+<p>1세기의 세계는 교육적 차원에서 세 가지 움직임으로 나눌 수 있다.</p>
+<p>대략 주전 6년에서 주후 33년까지의 첫 번째 3분의 1은 예수의 삶과 사역을 포함한다.</p>
+<p>주후 34년에서 66년까지의 두 번째 3분의 1은 사도들의 선포와 바울 서신의 시기를 포함한다.</p>
+<p>주후 67년에서 100년까지의 마지막 3분의 1은 대부분의 기록된 복음서들의 집필을 포함한다.</p>
+<p>이 연표는 중요한 사실을 드러낸다: 바울 서신들은 비록 복음서가 신약 정경의 처음에 등장하지만, 기록된 복음서들보다 더 일찍 작성되었다.</p>
+<p>정치적 세계는 로마의 통치와 헤롯 왕조에 의해 형성되었다.</p>
+<p>십자가 처형은 이 제국주의적 세계에 속한다 — 그것은 단순한 사형 방식이 아니라 수치와 통제의 공개적인 기술이었다.</p>
+<p>그러므로 마가가 십자가에서 예수의 정체성을 계시할 때, 그는 제국의 폭력이 자행되는 가장 낮은 공간에 예수를 위치시키며 신성한 정체성이 바로 그곳에서 계시됨을 보여준다.</p>
+<p>주후 70년 예루살렘 성전의 파괴는 주요한 역사적 단층선으로 기능한다.</p>
+<p>성전은 예배, 제사, 제사장의 권위, 민족적 정체성, 순례, 그리고 거룩한 기억의 중심이었다.</p>
+<p>성전의 파괴는 신학적, 사회적, 정치적, 상징적 위기를 초래했다. 주후 70년 이후, 유대교와 기독교 모두 급격히 변화된 세계 속에서 정체성을 공간적이고 관계적으로 협상해야만 했다.</p>
+<p>주후 70년 이전의 유대교는 다양했다. 바리새파는 기록된 율법과 구전 율법을 강조했고 성전 파괴에서 살아남아 이후 랍비 유대교에 기여했다.</p>
+<p>사두개파는 제사장 계층이며 귀족적이었고 주후 70년 이후 대체로 사라졌다. 에세네파는 분리주의적이고 묵시적이었으며 흔히 쿰란과 연관된다.</p>
+<p>학생 여러분, 바리새인들을 단순한 악당으로 축소해서는 안 됩니다 — 복음서의 갈등은 유대교 해석과 공동체적 권위의 더 넓은 다양성 안에서 분별해야 합니다.</p>
+<p>언어적 세계는 코이네 헬라어였다. 신약성경은 지중해 세계의 공통 헬라어로 말하지만, 유대적 범주들 속에서 기억한다.</p>
+<p>그것의 헬라어는 셈어의 영향, 아람어의 흔적, 히브리어 패턴, 그리고 이스라엘의 성경적 상상력을 담고 있다.</p>
+<p>이 관점에서 볼 때, 역사적 맥락은 배경 장식이 아닙니다.</p>
+<p>그것은 정체성과 소명이 공간적이고 관계적으로 형성되는 삶의 현장입니다.</p>
+<p>마가의 위기, 마태의 유대-기독교적 협상, 누가의 사회적 계층화 및 이방인으로 확장되는 지평, 그리고 요한의 상징적인 1세기 후반 공동체 맥락 모두가 각 복음서의 증언을 형성합니다.</p>
+<div class="core"><strong>핵심 문장:</strong> 신약성경을 책임감 있게 읽기 위해, 우리는 그것이 자리 잡고 있던 세계를 보아야 한다: 제국, 성전, 회당, 도시, 가정, 헬라어, 유대적 기억, 그리고 예수를 따르기를 배우는 공동체들.</div>
+</div></details>
+<details class="acc"><summary>제3부. 복음서 전승의 형성</summary><div class="accBody">
+<p>기록된 복음서들은 예수의 생애 동안 즉각적인 기록된 전기로 나타나지 않았습니다.</p>
+<p>그것들은 세 단계의 움직임을 통해 발전했습니다: 예수의 공생애 사역, 사도들의 선포, 그리고 기록된 복음서의 집필입니다.</p>
+<p>이는 우리가 두 가지 극단을 피하도록 돕습니다: 복음서를 현대의 녹취록으로 취급하거나, 예수의 사역과 분리된 자유로운 창작물로 취급하는 것입니다.</p>
+<p>첫 번째 단계는 예수의 공생애 사역입니다. 이것은 그의 말씀, 행적, 치유, 축귀, 비유, 갈등, 상징적 행동, 식탁 교제, 제자들을 부르심, 갈릴리와 유대를 관통하는 움직임, 그리고 예루살렘을 향한 마지막 여정을 포함합니다.</p>
+<p>예수에 대한 기억은 1세기 팔레스타인의 구체적인 세계 안에서, 실제 장소들에서, 실제 사람들 사이에서 시작되었습니다.</p>
+<p>두 번째 단계는 부활 이후의 사도적 선포입니다. 부활은 예수의 지상 사역을 지우지 않았습니다;</p>
+<p>그것은 따르는 자들이 그 사역을 이해하는 방식을 변화시켰습니다. 그들은 이제 예수를 십자가에 못 박히고 부활하신 분으로 선포했습니다.</p>
+<p>이 시기는 선포, 예배, 교리 문답, 선교, 그리고 공동체 가르침의 구전 시기였습니다.</p>
+<p>세 번째 단계는 대략 주후 65년에서 100년 사이의 기록된 복음서 집필입니다. 1세대 사도적 인물들이 세상을 떠나고 공동체가 확장됨에 따라, 영구적인 기록 증언이 필요해졌습니다.</p>
+<p>복음서 기자들은 물려받은 전승들을 모아 조직된 서사로 형성했습니다 — 자료를 선택하고, 배열하고, 강조하고, 생략하고, 각색하고, 해석하면서 말입니다.</p>
+<p>"페리코페(pericope)"라는 용어는 복음서 전승의 뚜렷한 단위를 명명합니다: 비유, 기적 이야기, 갈등 이야기, 선언 이야기, 수난 장면, 또는 부활 발현입니다.</p>
+<p>그러나 하나의 페리코페는 그것이 속한 복음서 내부에서 더 완전한 의미를 얻습니다. 마가복음에서의 치유는 권위와 비밀을 계시할 수 있습니다.</p>
+<p>마태복음에서의 가르침은 하나님 나라의 의를 계시할 수 있습니다. 누가복음에서의 비유는 경계 밖의 외부인을 향한 자비를 계시할 수 있습니다.</p>
+<p>"신학화된 역사(theologized history)"라는 구절은 주의 깊게 가르친다면 유용합니다. 그것은 복음서가 허구라는 것을 의미하지 않습니다.</p>
+<p>그것은 역사적 기억이 신학적 해석과 문학적 배열을 통해 제시됨을 의미합니다.</p>
+<p>복음서들은 예수의 공생애 사역에 뿌리를 두고 있지만, 그들은 부활 선포와 공동체 형성의 렌즈를 통해 그 사역을 제시합니다.</p>
+<div class="core"><strong>핵심 문장:</strong> 기록된 복음서들은 살아있는 사역에서 시작하여, 사도적 선포를 거쳐, 지속적인 문학적 증언으로 예수에 대한 기억을 전달하는 형성된 증언들이다.</div>
+</div></details>
+<details class="acc"><summary>제4부. 공관복음과 공관복음 문제</summary><div class="accBody">
+<p>마태, 마가, 누가는 함께 "공관(seen together)"될 수 있기 때문에 공관복음이라 불린다.</p>
+<p>그들은 비슷한 어휘, 이야기 순서, 구조, 그리고 동일한 많은 에피소드들을 공유한다.</p>
+<p>요한복음은 연대기, 문체, 담화 패턴, 상징주의, 그리고 신학적 제시가 공관복음 패턴과 상당히 다르기 때문에 따로 떨어져 있다.</p>
+<p>공관복음 문제(Synoptic Problem)는 마태, 마가, 누가가 문학적으로 어떻게 연관되어 있는지에 대한 학술적인 질문이다.</p>
+<p>그들은 왜 그렇게 많은 자료를 공유하는가? 그들은 왜 종종 같은 순서를 따르는가?</p>
+<p>그들은 왜 때때로 매우 유사한 헬라어 어휘를 사용하는가? 왜 마태와 누가는 마가에는 없는 자료를 공유하는가?</p>
+<p>그 유사성들은 독립적인 기억만으로 설명하기에는 너무 정밀하다 — 공유된 어휘와 엄격한 순서는 일종의 문학적 관계를 암시한다.</p>
+<p>삼중 전승(Triple Tradition)은 세 공관복음서 모두에서 발견되는 자료를 의미한다.</p>
+<p>이중 전승(Double Tradition)은 마태와 누가가 공유하지만 마가에는 없는 자료를 의미한다.</p>
+<p>이중 전승 자료에 대한 지배적인 설명은 Q 자료설(Q hypothesis)이다.</p>
+<p>독일어 Quelle(자료)에서 유래한 Q는 마가에는 없는 마태-누가의 자료를 설명하기 위해 사용되는 가상의 어록 자료이다.</p>
+<p>Q의 어떤 사본도 발견되지 않았으므로, Q는 복원된 문서가 아니라 학술적 가설로서 주의 깊게 가르쳐야 한다.</p>
+<p>마태의 고유 자료는 M이라 불린다; 누가의 고유 자료는 L이라 불린다. 두 자료설(Two-Source Theory)은 마태와 누가가 마가와 Q를 사용했으며, 동시에 고유한 자료를 보존했다고 주장한다.</p>
+<p>단순한 형태로: Mark + Q + M = 마태; Mark + Q + L = 누가.</p>
+<p>이 모델은 마태와 누가가 왜 마가의 내용 대부분을 공유하는지, 왜 그들이 마가에 없는 가르침 자료를 공유하는지, 그리고 왜 각각이 고유한 자료를 가지고 있는지를 설명한다.</p>
+<p>마가 우선설(Marcan Priority)은 마가가 가장 먼저 기록되었으며 마태와 누가를 위한 주요 자료로 제공되었을 가능성이 높다는 것을 의미한다.</p>
+<p>마가는 길이가 더 짧고, 그 헬라어가 종종 더 구어체적이며, 고유 자료가 거의 없고, 마태와 누가가 마가의 순서에 반대하여 함께 일치하는 경우가 드물다.</p>
+<p>가장 강력한 논거는 문학적이다: 마태와 누가는 종종 마가를 확장하고, 다듬고, 명확히 하며, 신학적으로 형성하는 것으로 보인다.</p>
+<div class="core"><strong>핵심 문장:</strong> 공관복음 문제는 공유된 복음서 전승이 자료 사용, 편집, 그리고 공동체 형성을 통해 어떻게 구별된 복음서의 증언이 되는지를 우리에게 가르쳐 준다.</div>
+</div></details>
+<details class="acc"><summary>제5부. 공관복음 문제의 주요 증거와 이론들</summary><div class="accBody">
+<p>마태, 마가, 누가가 종종 유사하거나 거의 동일한 헬라어 문구를 사용하기 때문에 공유된 어휘는 중요하다.</p>
+<p>구전 전승이 주제와 기억에 남는 말씀들을 보존할 수 있지만, 유사한 헬라어 어휘의 확장된 패턴들은 문학적 의존성을 강력히 시사한다.</p>
+<p>공유된 순서 또한 매우 중요하다 — 공관복음서들은 종종 사건들을 동일한 순서로 배치하며, 마태나 누가가 마가의 순서에서 벗어날 때조차 그들이 마가에 반대하여 함께 일치하는 경우는 드물다.</p>
+<p>통계는 그 요점을 더 날카롭게 한다. 마가는 661절이다. 마태는 1,068절이다. 누가는 1,149절이다.</p>
+<p>마태는 마가의 약 80퍼센트를 유지하는 반면, 누가는 약 65퍼센트를 유지한다.</p>
+<p>마가복음이 더 짧지만, 마가복음의 대부분은 마태복음과 누가복음 안에 나타난다.</p>
+<p>두 자료설은 계속해서 주요 모델로 남아 있다. 그 강점은 설명의 범위에 있다: 그것은 마가를 서사의 뼈대로, Q를 공유된 어록 자료로, M/L을 구별된 전승으로 설명한다.</p>
+<p>그 난점은 소소한 일치(Minor Agreements) — 삼중 전승 자료에서 마태와 누가가 마가에 반대하여 일치하는 부분들 — 를 설명하는 데 있다.</p>
+<p>Q는 학문적 겸손함을 가지고 다루어져야 한다. 그것은 가설적이다.</p>
+<p>우리는 Q가 마가에는 없는 마태-누가 자료를 설명할 수 있다고 말할 수 있다.</p>
+<p>우리는 마치 완전한 Q 공동체를 자신 있게 재구성할 수 있는 것처럼 말해서는 안 된다.</p>
+<p>중요하게도, Q는 기독론적 내용을 포함한다 — 거부당한 인자, 아버지와 독특하게 관계 맺으신 분, 오실 심판자, 그리고 그분의 말씀이 순종을 요구하는 주님으로서의 예수.</p>
+<p>그리스바흐 가설(Griesbach Hypothesis)은 대안을 제공한다: 마태가 먼저 기록되고, 누가가 마태를 사용했으며, 마가가 나중에 이 둘을 요약했다는 것이다.</p>
+<p>이것의 강점은 전통적인 정경 순서와 일치한다는 점이다. 난점은 만약 마가가 마태와 누가를 모두 사용할 수 있었다면 왜 그렇게 많은 주요 가르침 자료를 생략했는지 설명하기 어렵다는 것이다.</p>
+<p>편집 비평은 특히 중요하다. 만약 마태가 마가의 세례 어휘를 "너는 내 사랑하는 아들이라"에서 "이는 내 사랑하는 아들이요"로 변경한다면, 그 변화는 예수의 정체성을 공동체에 공개적으로 제시하려는 마태의 신학적 신호일 수 있다.</p>
+<p>복음서의 차이점들은 단순한 불일치가 아니다; 그것들은 종종 신학적 신호들이다.</p>
+<div class="core"><strong>핵심 문장:</strong> 공관복음 문제는 복음서들이 전승을 공유하지만, 각 복음서 기자는 특정 공동체를 위한 구별된 문학적 증언으로 그 전승을 형성한다는 것을 가르친다.</div>
+</div></details>
+<details class="acc"><summary>제6부. 왜 네 개의 복음서인가?</summary><div class="accBody">
+<p>초대 교회는 네 개의 구별된 복음서 기록들을 하나로 조화된 슈퍼-복음서로 혼합하기보다 그대로 보존했습니다.</p>
+<p>각각의 복음서가 예수에 대한 구별된 문학적이고 공동체를 형성하는 증언을 제공하기 때문에 이러한 결정은 중요합니다.</p>
+<p>조화된 복음서(harmonized Gospel)는 마태, 마가, 누가, 요한을 하나의 연속된 서사로 결합하려 시도합니다 — 이는 기본적인 비교에는 유용할 수 있지만, 각 복음서 기자의 고유한 목소리를 지워버릴 때 위험해집니다.</p>
+<p>마가는 우리에게 십자가 형태의 복음서를 줍니다. 마가는 예수를 십자가와 분리해서는 바르게 이해될 수 없는 고난받는 인자로 제시합니다.</p>
+<p>마가는 승리주의를 방지합니다. 마태는 우리에게 성취, 가르침, 의, 그리고 공동체 형성의 복음서를 줍니다.</p>
+<p>마태는 뿌리 없음을 방지합니다 — 예수는 이스라엘의 이야기 밖에서 나타나지 않습니다.</p>
+<p>누가는 우리에게 자비, 역전, 성령, 기도, 그리고 보편적 선교의 복음서를 줍니다. 누가는 배제를 방지합니다.</p>
+<p>요한은 우리에게 육신이 되신 로고스의 복음서를 줍니다. 요한은 환원주의를 방지합니다.</p>
+<p>만약 우리에게 단 하나의 복음서만 있었다면, 예수에 대한 우리의 시야는 더 얇아졌을 것입니다.</p>
+<p>네 개의 복음서는 또한 각기 다른 종류의 공동체들을 형성합니다. 마가는 고난을 통과하여 예수를 따르는 십자가 형태의 공동체를 형성합니다.</p>
+<p>마태는 의, 자비, 화해, 그리고 선교의 가르침 공동체를 형성합니다.</p>
+<p>누가는 자비, 역전, 기도, 그리고 포용의 성령이 이끄시는 공동체를 형성합니다.</p>
+<p>요한은 믿음, 사랑, 생명, 그리고 증언의 거하는 공동체를 형성합니다.</p>
+<p>언어는 우리가 이 문제를 명확하게 서술하도록 돕습니다: 각 복음서는 서로 다른 형성 방향을 제시합니다.</p>
+<p>마가는 독자들을 십자가로 이끕니다. 마태는 독자들을 하나님 나라의 가르침 안으로 이끕니다. 누가는 독자들을 주변부와 열방을 향해 이끕니다.</p>
+<p>요한은 독자들을 거하는 생명 안으로 이끕니다. 예수의 진리는 단 하나의 복음서 목소리만으로 담아내기에는 너무나 풍성합니다.</p>
+<div class="core"><strong>핵심 문장:</strong> 사중 복음서의 증언은 우리에게 하나의 평면화된 전기가 아니라 십자가, 성취, 자비, 성육신이라는 공동체를 형성하는 예수의 네 가지 구별된 초상을 제공한다.</div>
+</div></details>
+
+
+
+
+<details class="acc"><summary>제7부. 최종 종합: 네 개의 복음서 함께 읽기</summary><div class="accBody">
+<p>이제 우리는 전체 모듈을 하나로 모읍니다. 우리는 신약성경을 언약적 기억이자 기록된 증언으로 다루며 시작했습니다.</p>
+<p>우리는 신약성경의 역사적 세계, 복음서 전승의 형성, 공관복음 문제, 주요 공관복음 이론들, 그리고 마가, 마태, 누가, 요한의 구별된 초상들을 살펴보았습니다.</p>
+<p>마지막 질문은 이것입니다: 학생들은 어떻게 네 개의 복음서를 평면화하지 않고 함께 읽어야 하는가?</p>
+<p>초대 교회는 네 개의 구별된 복음서 기록들을 하나의 조화된 슈퍼-복음서로 혼합하기보다 구별된 채로 보존했다.</p>
+<p>이는 복음서의 다원성이 해결해야 할 약점이 아님을 의미한다. 그것은 받아들여야 할 정경적 선물이다.</p>
+<p>차이점들은 역사적 질문을 제기할 수도 있지만, 동시에 각 복음서 기자가 특정 공동체를 위해 예수에 대한 기억을 어떻게 형성하는지 드러낸다.</p>
+<p>사중 증언은 단일한 복음서가 홀로 담아낼 수 있는 것보다 더 풍성한 초상을 우리에게 제공한다.</p>
+<p>마가는 우리에게 고난받는 인자를 제공한다: 십자가, 비밀, 실패한 제자도, 섬김이다.</p>
+<p>마태는 우리에게 새로운 모세와 임마누엘을 제공한다: 성취, 다섯 개의 강화, 하나님 나라의 의, 교회(ekklesia)이다.</p>
+<p>누가는 우리에게 성령의 인도를 받는 구원자이자 보편적 주님을 제공한다: 가난한 자, 여성, 외부인, 성령, 기도, 예루살렘으로의 여정이다.</p>
+<p>요한은 우리에게 육신이 되신 로고스를 제공한다: 표적, 영광, 믿음, 생명, 거함, 아버지를 계시함이다.</p>
+<p>조화(Harmonization)만으로는 충분하지 않다. 그것은 이야기를 더 매끄럽게 만들 수는 있지만, 사중적 읽기는 그 증언을 더 풍성하게 만든다.</p>
+<p>조화는 마가의 긴박성을 지우고, 마태의 가르침 구조를 희석시키며, 누가의 자비로 형성된 여정을 일반화하고, 요한의 상징적 깊이를 공관복음의 범주 안으로 억지로 밀어 넣을 수 있다.</p>
+<p>차이점들은 먼저 의미 있는 해석적 신호로 읽혀야 한다.</p>
+<p>수직적 읽기와 수평적 읽기는 여전히 두 가지 필수적인 실천이다. 마가복음을 마태복음 및 누가복음과 비교하기 전에, 먼저 마가복음을 수직적으로 읽어라.</p>
+<p>다른 복음서들로부터 무언가를 가져오기 전에, 각 복음서를 그 자체의 문학적 세계로 읽어라.</p>
+<p>그 다음에 수평적으로 읽음으로써 공유된 전승이 어떻게 구별된 증언이 되는지 보아라.</p>
+<p>복음서들은 신학화된 역사이다. 그것들은 예수의 사역, 죽음, 그리고 부활 선포에 역사적으로 뿌리를 두고 있으며, 믿음, 문학적 배열, 그리고 공동체 형성을 통해 해석적으로 형성되었다.</p>
+<p>네 개의 복음서는 또한 제자도의 네 가지 차원을 형성한다. 마가는 십자가 형태의 섬김을 형성한다. 마태는 하나님 나라의 의를 형성한다.</p>
+<p>누가는 성령이 이끄시는 자비를 형성한다. 요한은 거하는 믿음과 증언을 형성한다.</p>
+<p>함께, 그들은 환원주의에 저항한다 — 그들은 우리가 예수를 단지 교사로만, 단지 치유자로만, 단지 고난받는 희생자로만, 단지 신성한 인물로만, 혹은 단지 사적인 영성의 상징으로만 축소하는 것을 방지한다.</p>
+<p>내부적(Emic) 읽기가 중요하다. 내부적으로 읽는다는 것은 각 복음서 고유의 문학적 세계가 우리에게 예수를 보는 방법을 가르치도록 허용하는 것이다.</p>
+<p>마가는 묻는다: 십자가는 예수가 참으로 누구인지 어떻게 계시하는가?</p>
+<p>마태는 묻는다: 예수는 어떻게 이스라엘을 성취하시고 하나님 나라 공동체를 형성하시는가?</p>
+<p>누가는 묻는다: 성령의 인도를 받는 예수의 여정은 어떻게 주변부로 자비를 가져오는가?</p>
+<p>요한은 묻는다: 육신이 되신 로고스는 어떻게 독자들을 믿음, 생명, 그리고 거하는 증언으로 움직이게 하는가?</p>
+<div class="core"><strong>핵심 문장:</strong> 네 개의 복음서는 함께 독자들이 십자가, 성취, 자비, 그리고 성육신을 통해 예수를 알도록 형성한다.</div>
+<h4>닫는 형성: 네 가지 증언과 독자의 미래 자아</h4>
+<p>이 모듈의 끝에서, 학생들은 단지 용어들만 가지고 떠나서는 안 됩니다.</p>
+<p>그들은 변화된 읽기 방식을 가지고 떠나야 합니다. 그들은 언약, 정경, 공관복음, Q, 마가 우선설, M, L, 페리코페, 편집, 수직적 읽기, 그리고 수평적 읽기가 무엇을 의미하는지 알아야 합니다.</p>
+<p>그러나 그보다 더 중요한 것은, 각 복음서를 살아있는 증언으로 듣는 방법을 알아야 한다는 것입니다.</p>
+<p>신약성경은 선포에서부터 기록된 증언으로 출현했습니다. 복음서들은 예수의 사역, 사도들의 선포, 그리고 기록을 통해 형성되었습니다.</p>
+<p>마태, 마가, 누가는 공관복음 문제를 통해 문학적으로 연관되어 있습니다.</p>
+<p>마가, 마태, 누가, 요한은 각각 구별된 복음서의 초상을 제공합니다. 사중 복음서 읽기는 섣부른 조화보다 더 풍성합니다.</p>
+<h4>학생들에게 남아 있어야 할 문구들</h4>
+<p>복음서들은 형성된 증언들입니다.</p>
+<p>차이점들이 항상 문제인 것은 아닙니다; 종종 그것들은 해석적 신호들입니다.</p>
+<p>수평적으로 읽기 전에 수직적으로 읽으십시오.</p>
+<p>각 복음서는 공동체를 형성합니다.</p>
+<p>사중 증언은 예수의 풍성함을 보호합니다.</p>
+<h4>성찰 질문들 (소크라테스적-자기 비움적 마침)</h4>
+<p>마지막 질문은 단순히 "무엇을 배웠는가?"가 아닙니다. 그것은 "이 읽기가 당신을 어디로 움직이게 할 것인가?"입니다.</p>
+<p>마가복음이 말씀했다면, 학생들은 십자가 없는 영광을 구할 것인지 아니면 섬김 속에서 예수를 따를 것인지 물어야 합니다.</p>
+<p>마태복음이 말씀했다면, 학생들은 의로움이 성과가 되었는지 아니면 자비의 형태를 띤 순종이 되었는지 물어야 합니다.</p>
+<p>누가복음이 말씀했다면, 자비가 가난한 자, 외부인, 죄인, 그리고 모든 민족을 향해 어디로 움직여야 하는지 물어야 합니다.</p>
+<p>요한복음이 말씀했다면, 믿음이 지적인 동의로 남아 있는지 아니면 거하는 생명과 증언이 되는지 물어야 합니다.</p>
+<p>이 모듈이 초청하는 '미래 자아(Future Self)'는 각 복음서의 세계 안에 서서, 그 구별된 목소리를 듣고, 책임감 있게 비교하며, 평면화에 저항하고, 예수의 움직임에 의해 형성되는 독자 — 즉 학문적 연구와 체화된 제자도 사이의 다리입니다.</p>
+<h4>최종 형성 연습</h4>
+<p>학생들에게 각 복음서에 대해 다음 한 문장을 완성하도록 요청하십시오:</p>
+<p>내가 마가복음을 읽었기 때문에, 나는 이제 제자도를 ... 로 이해한다.</p>
+<p>내가 마태복음을 읽었기 때문에, 나는 이제 의를 ... 로 이해한다.</p>
+<p>내가 누가복음을 읽었기 때문에, 나는 이제 자비를 ... 로 이해한다.</p>
+<p>내가 요한복음을 읽었기 때문에, 나는 이제 믿음을 ... 로 이해한다.</p>
+<p>그런 다음 마지막 통합적 질문을 하나 던지십시오: 사중 복음서의 증언은 지금 우리를 어떤 외부 공간으로 보내고 있습니까?</p>
+<p>그 대답은 추상적이어서는 안 됩니다. 그것은 우리를 고통받는 이웃, 갈등하는 공동체, 소외된 학생, 분열된 교회, 자비가 필요한 교실, 혹은 체화된 증언이 필요한 세상으로 보낼 수 있습니다.</p>
+<p>여러분은 단지 네 개의 복음서에 대해 배우고 있는 것이 아닙니다. 여러분은 네 가지 차원의 형성으로 초청받고 있습니다: 십자가에 못 박히신 메시아를 따르고, 하나님 나라의 의를 실천하며, 자비를 주변부로 움직이고, 살아있는 증인으로서 육신이 되신 말씀 안에 거하라는 초청입니다.</p>
+</div></details>
+<details class="acc"><summary>부록 A. 사중 복음서 교수 매트릭스</summary><div class="accBody">
+<table><tr><th>복음서</th><th>주요 위치/방향</th><th>예수의 초상과 사역</th><th>형성된 공동체</th></tr><tr><td>마가</td><td>십자가로 가는 길</td><td>고난받는 인자 — 섬기고, 고난받으며, 자신의 생명을 대속물로 줌</td><td>섬김과 증언의 십자가 형태 공동체</td></tr><tr><td>마태</td><td>모든 민족을 향해 열려 있는 이스라엘의 이야기</td><td>새로운 모세 / 임마누엘 — 의를 가르치고, 교회를 형성함</td><td>의, 자비, 화해, 선교의 가르침 공동체</td></tr><tr><td>누가</td><td>예루살렘으로 가는 길과 열방을 향한 선교</td><td>성령이 이끄시는 구원자 — 가난한 자, 외부인, 죄인, 열방을 향해 자비를 움직임</td><td>자비, 역전, 기도, 포용의 성령이 이끄시는 공동체</td></tr><tr><td>요한</td><td>위로부터 육신 안으로, 그리고 거하는 공동체</td><td>육신이 되신 로고스 — 아버지를 계시하고, 생명을 주며, 믿음을 창조함</td><td>믿음, 사랑, 생명, 증언의 거하는 공동체</td></tr></table>
+</div></details>
+<details class="acc"><summary>부록 B. 학생들을 위한 필수 용어집</summary><div class="accBody">
+<table><tr><th>용어</th><th>정의</th></tr><tr><td>언약 (Testament)</td><td>언약; 나중에 신성한 기록들의 모음에 적용됨.</td></tr><tr><td>복음 / 유앙겔리온 (Gospel / Euangelion)</td><td>좋은 소식; 처음에는 선포였고, 나중에는 기록된 복음서 서사가 됨.</td></tr><tr><td>정경 (Canon)</td><td>권위 있는 기록들로 인정된 모음.</td></tr><tr><td>문자적 의미 (Literal Sense)</td><td>저자가 원 독자를 위해 의도한 의미로서, 역사적이고 문학적인 맥락에서 읽힘.</td></tr><tr><td>역사 비평 (Historical Criticism)</td><td>원래의 역사적 설정 안에서 텍스트를 연구함.</td></tr><tr><td>본문 비평 (Textual Criticism)</td><td>가능성 있는 원본의 어휘를 결정하기 위해 사본의 변형들을 연구함.</td></tr><tr><td>자료 비평 (Source Criticism)</td><td>성경 저자들이 사용한 자료들을 연구함.</td></tr><tr><td>편집 비평 (Redaction Criticism)</td><td>저자들이 물려받은 자료를 어떻게 형성했는지 연구함.</td></tr><tr><td>공관복음 (Synoptic Gospels)</td><td>함께 볼 수 있는 마태, 마가, 누가복음.</td></tr><tr><td>공관복음 문제 (Synoptic Problem)</td><td>마태, 마가, 누가가 문학적으로 어떻게 연관되어 있는지에 대한 질문.</td></tr><tr><td>마가 우선설 (Marcan Priority)</td><td>마가복음이 가장 먼저 기록되었고 마태와 누가가 이를 사용했다는 견해.</td></tr><tr><td>Q</td><td>마가에는 없는 마태-누가 자료를 설명하기 위해 사용되는 가상의 어록 자료.</td></tr><tr><td>M</td><td>마태 고유의 자료.</td></tr><tr><td>L</td><td>누가 고유의 자료.</td></tr><tr><td>삼중 전승 (Triple Tradition)</td><td>마태, 마가, 누가 모두에서 발견되는 자료.</td></tr><tr><td>이중 전승 (Double Tradition)</td><td>마태와 누가에는 있지만 마가에는 없는 자료.</td></tr><tr><td>페리코페 (Pericope)</td><td>복음서 전승의 뚜렷한 단위.</td></tr><tr><td>수직적 읽기 (Vertical Reading)</td><td>각 복음서를 고유한 문학적 세계로 읽음.</td></tr><tr><td>수평적 읽기 (Horizontal Reading)</td><td>평행하는 복음서 본문들을 나란히 비교함.</td></tr><tr><td>메시아 비밀 (Messianic Secret)</td><td>예수께서 자신의 정체성에 대해 침묵을 명하시는 마가복음의 모티프.</td></tr><tr><td>에클레시아 / 교회 (Ekklesia)</td><td>총회 혹은 교회; 복음서 중 마태복음에서만 독특하게 사용됨.</td></tr><tr><td>로고스 (Logos)</td><td>말씀; 육신이 되신 선제적(pre-existent) 말씀에 대한 요한의 용어.</td></tr><tr><td>표적 / 세메이온 (Sign / Semeion)</td><td>요한복음에서 그 자체를 넘어 예수의 정체성을 가리키는 기적.</td></tr><tr><td>거함 / 메노 (Abide / Menō)</td><td>요한복음에서 예수의 생명과 사랑 안에 머무르거나 거하는 것.</td></tr></table>
+</div></details>
+<details class="acc"><summary>부록 C. 캡스톤 과제</summary><div class="accBody">
+<p>네 개의 복음서를 평면화하지 않고 읽기</p>
+<h4>과제 지시 (Prompt)</h4>
+<p>다음 질문에 답하는 1,200~1,500 단어 분량의 에세이를 작성하십시오: 초대 교회는 왜 네 개의 구별된 복음서를 보존했으며, 복음서를 수직적이고 수평적으로 읽는 것은 예수에 대한 우리의 이해를 어떻게 깊어지게 합니까?</p>
+<h4>필수 포함 요소</h4>
+<p>공관복음의 정의.</p>
+<p>공관복음 문제에 대한 간략한 설명.</p>
+<p>마가 우선설과 두 자료설의 요약.</p>
+<p>마가, 마태, 누가, 요한에 대한 각각 한 문단씩의 서술.</p>
+<p>조화(harmonization)가 유용할 수 있으나 왜 불충분한지에 대한 논의.</p>
+<p>사중 복음서 읽기가 공동체를 어떻게 형성하는지에 대한 최종적인 성찰.</p>
+<h4>채점 기준표 (Grading Rubric)</h4>
+<table><tr><th>평가 범주</th><th>우수함 (Excellent)</th><th>발전 중 (Developing)</th><th>개선 필요 (Needs Improvement)</th></tr><tr><td>공관복음 이해</td><td>공관복음 문제와 자료설을 정확히 설명함</td><td>부분적으로 설명하나 명확성이 부족함</td><td>주요 용어들을 혼동하거나 누락함</td></tr><tr><td>복음서의 구별성</td><td>네 개의 복음서를 명확히 구별함</td><td>일부는 구별하나 나머지는 평면화함</td><td>복음서들을 동일한 것으로 취급함</td></tr><tr><td>텍스트(본문) 근거</td><td>관련된 복음서 텍스트를 적절히 사용함</td><td>일부 텍스트를 사용하나 일관성이 없음</td><td>텍스트에 기반한 근거가 부족함</td></tr><tr><td>내부적(Emic) 읽기</td><td>각 복음서가 자신의 목소리로 말하게 함</td><td>약간의 내부적 읽기 인식이 있음</td><td>후대의 범주들을 너무 성급하게 부과함</td></tr><tr><td>종합</td><td>사중 증언을 명확하게 통합함</td><td>약간의 종합이 있음</td><td>파편화되어 있거나 불명확함</td></tr><tr><td>글쓰기 품질</td><td>명확하고, 체계적이며, 학술적으로 신중함</td><td>이해 가능하지만 고르지 않음</td><td>체계적이지 않거나 부정확함</td></tr></table>
+</div></details>
+</div></div></section>
+<section class="tabPanel" id="t2"><div class="enContent"><div class="card"><h2>10 Core Texts — Tuesday / Friday Preparation</h2><table><tr><th>Day</th><th>Text</th><th>Exegetical Question</th><th>Hermeneutical Question</th></tr><tr><td>Tuesday</td><td><strong>Mark 1:1–8</strong></td><td>How does Mark 1:1 frame the whole Gospel as “the beginning of the good news of Jesus Christ, the Son of God,” and how do vv. 2–8 prepare that beginning through Scripture, wilderness, and John’s witness?</td><td>How does Mark’s opening invite students to understand the gospel as a beginning that calls for preparation, repentance, and faithful witness?</td></tr>
+<tr><td>Tuesday</td><td><strong>Mark 10:35–45</strong></td><td>How does Mark 10:45 reinterpret James and John’s request for status by defining Jesus’ mission as service and giving his life as a ransom for many?</td><td>How does Jesus’ ransom saying reshape leadership as service rather than status, control, or self-promotion?</td></tr>
+<tr><td>Tuesday</td><td><strong>Matthew 1:1–2:23</strong></td><td>How do genealogy, Emmanuel, Magi, Herod, Egypt, and Nazareth locate Jesus inside Israel’s story?</td><td>How does fulfillment resist both rootlessness and exclusion?</td></tr>
+<tr><td>Tuesday</td><td><strong>Matthew 5:1–7:29</strong></td><td>How does the Sermon on the Mount reveal Jesus as authoritative interpreter of covenant righteousness?</td><td>Where does righteousness become mercy-shaped obedience rather than performance?</td></tr>
+<tr><td>Tuesday</td><td><strong>Matthew 28:16–20</strong></td><td>How does the Great Commission complete Matthew’s Emmanuel frame and Israel-to-nations movement?</td><td>How should a learning community teach, practice, and embody Jesus’ commands?</td></tr>
+<tr><td>Friday</td><td><strong>Luke 1:46–55; 4:16–30</strong></td><td>How do the Magnificat and Nazareth sermon announce Lukan reversal, release, and salvation for the margins?</td><td>Where must mercy move in our classroom, church, and community?</td></tr>
+<tr><td>Friday</td><td><strong>Luke 9:51–19:10</strong></td><td>How does Luke’s journey to Jerusalem organize mercy, table fellowship, Samaritan inclusion, and Zacchaeus’ salvation?</td><td>How does salvation become movement toward bodies, social locations, and concrete need?</td></tr>
+<tr><td>Friday</td><td><strong>John 1:1–18</strong></td><td>How does the Logos prologue frame incarnation as God’s self-disclosure entering embodied human life?</td><td>How does “the Word became flesh” challenge disembodied belief?</td></tr>
+<tr><td>Friday</td><td><strong>John 2:1–12; 9:1–41; 11:1–44</strong></td><td>How do Johannine signs disclose glory and move characters from seeing to believing?</td><td>Where do we stop at events instead of moving through signs toward life?</td></tr>
+<tr><td>Friday</td><td><strong>John 13:1–17:26; 20:30–31</strong></td><td>How do footwashing, abiding, Paraclete, love command, and purpose statement define Johannine community?</td><td>How does belief become abiding life and continuing witness?</td></tr></table></div></div><div class="koContent ko"><div class="card"><h2>10개 핵심 본문 — 화요일 / 금요일 준비</h2><table><tr><th>요일</th><th>본문</th><th>주해 질문</th><th>해석 질문</th></tr><tr><td>화요일</td><td><strong>마가복음 1:1–8</strong></td><td>마가복음 1:1은 전체 복음서를 “하나님의 아들 예수 그리스도의 복음의 시작”으로 어떻게 틀 짓고, 2–8절은 성경 인용, 광야, 요한의 증언을 통해 그 시작을 어떻게 준비하는가?</td><td>마가복음의 시작은 학생들이 복음을 준비, 회개, 증언으로 부름받는 새로운 시작으로 이해하도록 어떻게 초대하는가?</td></tr><tr><td>화요일</td><td><strong>마가복음 10:35–45</strong></td><td>마가복음 10:45은 야고보와 요한의 지위 요구를 어떻게 재해석하며, 예수의 사명을 섬김과 많은 사람을 위한 대속적 자기 내어줌으로 어떻게 정의하는가?</td><td>예수의 대속물 말씀은 지도력을 지위, 통제, 자기 높임이 아니라 섬김으로 어떻게 재형성하는가?</td></tr><tr><td>화요일</td><td><strong>마태복음 1:1–2:23</strong></td><td>족보, 임마누엘, 동방박사, 헤롯, 애굽, 나사렛은 예수를 이스라엘 이야기 안에 어떻게 위치시키는가?</td><td>성취는 뿌리 없음과 배제를 어떻게 동시에 저항하게 하는가?</td></tr><tr><td>화요일</td><td><strong>마태복음 5:1–7:29</strong></td><td>산상수훈은 예수를 언약적 의의 권위 있는 해석자로 어떻게 보여 주는가?</td><td>의는 어디에서 수행적 과시가 아니라 긍휼로 형성된 순종이 되는가?</td></tr><tr><td>화요일</td><td><strong>마태복음 28:16–20</strong></td><td>대위임령은 마태의 임마누엘 구조와 이스라엘에서 열방으로 향하는 이동을 어떻게 완성하는가?</td><td>학습 공동체는 예수의 명령을 어떻게 가르치고 실천하고 몸으로 살아내야 하는가?</td></tr><tr><td>금요일</td><td><strong>누가복음 1:46–55; 4:16–30</strong></td><td>마리아의 찬가와 나사렛 설교는 누가의 역전, 해방, 주변부를 향한 구원을 어떻게 선포하는가?</td><td>우리의 교실, 교회, 공동체에서 긍휼은 어디로 이동해야 하는가?</td></tr><tr><td>금요일</td><td><strong>누가복음 9:51–19:10</strong></td><td>예루살렘으로 향하는 누가의 여정은 긍휼, 식탁 교제, 사마리아인 포용, 삭개오의 구원을 어떻게 조직하는가?</td><td>구원은 어떻게 몸, 사회적 위치, 구체적 필요를 향한 이동이 되는가?</td></tr><tr><td>금요일</td><td><strong>요한복음 1:1–18</strong></td><td>로고스 서문은 성육신을 인간의 몸을 입은 삶 안으로 들어오신 하나님의 자기 계시로 어떻게 제시하는가?</td><td>“말씀이 육신이 되었다”는 고백은 몸 없는 믿음을 어떻게 도전하는가?</td></tr><tr><td>금요일</td><td><strong>요한복음 2:1–12; 9:1–41; 11:1–44</strong></td><td>요한의 표적들은 영광을 드러내며 인물들을 보는 것에서 믿는 것으로 어떻게 이동시키는가?</td><td>우리는 어디에서 사건 자체에 멈추고 생명을 향한 표적 읽기로 나아가지 못하는가?</td></tr><tr><td>금요일</td><td><strong>요한복음 13:1–17:26; 20:30–31</strong></td><td>발 씻김, 거함, 보혜사, 사랑의 계명, 목적 진술은 요한 공동체를 어떻게 정의하는가?</td><td>믿음은 어떻게 거하는 생명과 지속되는 증언이 되는가?</td></tr></table></div></div></section>
+<section class="tabPanel" id="t3"><div class="enContent"><div class="card"><h2>Mark — Cruciform Gospel</h2><div class="core"><strong>Core:</strong> Jesus is truly known only through the cross, and discipleship means following the suffering Son of Man in service, endurance, and witness.</div><h4>Lecture Narrative</h4>
+<p>We begin the individual Gospels with Mark because this teaching sequence has established Marcan Priority as the dominant working model. Mark is the shortest Gospel, yet much of Mark appears in Matthew and Luke. It functions as the foundational Synoptic narrative — the primary narrative skeleton that Matthew and Luke expand, organize, and reshape.</p>
+<p>Mark begins abruptly: “The beginning of the good news of Jesus Christ, the Son of God.” There is no genealogy, no infancy narrative, no childhood story, no cosmic prologue. Mark begins with proclamation, wilderness, baptism, temptation, and urgent kingdom announcement. The Greek term eυαγγέλιον / euangelion means good news. In Mark, oral proclamation becomes written Gospel.</p>
+<p>Mark’s literary structure can be taught as a two-act drama. The first act (Mark 1:14–8:26) emphasizes Jesus’ authority in Galilee: teaching, healing, exorcism, conflict, boundary crossing, and growing misunderstanding. The turning point is Mark 8:27–31, where Peter confesses Jesus as Messiah, but Jesus immediately redefines messiahship through suffering. The second act (Mark 8:31–16:8) moves toward the cross through three passion predictions, each followed by discipleship failure.</p>
+<p>The Messianic Secret is one of Mark’s defining themes. Jesus repeatedly commands silence about his identity. The problem is not that people use the wrong title — the problem is that they attach the right title to the wrong expectation. “Messiah” becomes dangerous if separated from suffering service.</p>
+<p>Mark also uses intercalation — the sandwich technique. One story begins, another interrupts it, and then the first resumes. The Jairus story and the bleeding woman interpret each other. The fig tree and Temple action interpret each other. Mark’s meaning often emerges not only through what stories say, but through how they are arranged.</p>
+<p>Mark 10:45 is a core interpretive key: “For the Son of Man came not to be served but to serve, and to give his life a ransom for many.” Mark’s likely ending at 16:8, with the women fleeing from the empty tomb in fear and silence, forces the reader to respond. Will we remain silent? Will we flee? Will we become witnesses?</p>
+<h4>I. Literary Overview</h4>
+<h4>II. Author, Date, and Provenance</h4>
+<h4>A. The Question of Authorship</h4>
+<p>The Gospel of Mark bears no internal claim to authorship. The earliest external attribution comes from Papias of Hierapolis (c. 120–130 CE), preserved in Eusebius’s Ecclesiastical History: Papias reports that Mark, “having become Peter’s interpreter, wrote down accurately, though not in order, as many of the Lord’s sayings and doings as he remembered.” This tradition connects the evangelist to the Petrine mission and to the Roman community.</p>
+<p>Raymond Brown</p>
+<p>Brown accepts the Markan tradition with careful qualifications. In An Introduction to the New Testament, he argues that while direct Petrine authorship is improbable, the tradition that Mark drew on Petrine reminiscence is “not implausible” and preserves a genuine historical memory of the gospel’s origins. Brown locates the evangelist within a Petrine circle without requiring mechanical dictation.</p>
+<p>Bart Ehrman</p>
+<p>Ehrman’s position is sharply contrasted. In The New Testament: A Historical Introduction, he argues that the attribution to Mark is a second-century ecclesiastical construction designed to anchor the text apostolically. The Petrine connection is, on Ehrman’s reading, theological apologetic, not historical datum.</p>
+<p>Between Brown and Ehrman lies a significant but not absolute disagreement. N.T. Wright and Michael Bird (The New Testament in Its World) occupy a mediating position: they accept the Markan attribution as early and geographically plausible, but resist over-reading Papias as a verbatim eyewitness account. Luke Timothy Johnson similarly affirms the tradition’s coherence with the gospel’s internal profile — its rough Greek, urgency of pace, and Petrine perspective in passion sections (8:27–16:8).</p>
+<h4>B. Date and Historical Setting</h4>
+<p>The majority of critical scholars date Mark to c. 65–70 CE, on either side of the destruction of Jerusalem. The internal evidence is debated: Mark 13:1–2 (“not one stone will be left”) is read by some as genuine prophecy, by others as vaticinium ex eventu — prophecy composed after the event of 70 CE. Wright and Bird argue for a pre-70 date. Ehrman leans post-70. Brown occupies a careful middle ground, noting that a date of c. 68–70 CE accommodates both the Neronian persecution context and the pre-destruction framing of the discourse.</p>
+<h4>III. Literary Structure and Outline</h4>
+<p>Mark’s structure is governed by geographical movement and a central christological hinge at 8:27–30 (Peter’s confession at Caesarea Philippi). The gospel divides into two halves: the Galilean ministry of power and proclamation (1–8) and the Jerusalem ministry of passion and death (8–16), with the confession as the axis upon which both halves turn.</p>
+<p class="outline">— 1:1–1:13 Prologue: The Beginning of the Gospel — Baptism, Voice, Temptation</p>
+<p class="outline">— 1:14–3:35 Galilean Ministry I: Authority Demonstrated — Healings, Exorcisms, Controversy Stories</p>
+<p class="outline">— 4:1–6:6a Parabolic Teaching and Mighty Works — Calming Sea, Gerasene Demoniac, Jairus’s Daughter</p>
+<p class="outline">— 6:6b–8:26 Galilean Ministry II: Bread and Blindness — Two Feedings, Walking on Water, Syrophoenician Woman</p>
+<p class="outline">— 8:27–9:1 Central Hinge: Caesarea Philippi Confession — “You are the Messiah” — First Passion Prediction</p>
+<p class="outline">— 9:2–10:52 Journey to Jerusalem: Three Passion Predictions — Transfiguration, Discipleship Instruction, Bartimaeus</p>
+<p class="outline">— 11:1–13:37 Jerusalem: Conflict and Apocalypse — Temple Action, Controversies, Olivet Discourse</p>
+<p class="outline">— 14:1–15:47 Passion Narrative — Anointing, Last Supper, Gethsemane, Trial, Crucifixion</p>
+<p class="outline">— 16:1–8 The Empty Tomb — Fearful Silence — the “original ending”</p>
+<p class="outline">— 16:9–20 Secondary Ending (Longer) — Post-70 CE addition; absent from Sinaiticus, Vaticanus</p>
+<h4>IV. Structural Analysis and Scholarly Debate</h4>
+<p>The “messianic secret” motif — Jesus’ repeated commands to silence following healings and demonstrations of identity (1:25, 1:44, 3:12, 5:43, 7:36, 8:30, 9:9) — has generated sustained scholarly debate since Wilhelm Wrede’s 1901 monograph Das Messiasgeheimnis. Mark’s structural use of secrecy is not merely a narrative device but a theological claim: the identity of Jesus cannot be rightly known except from the vantage of the cross.</p>
+<p>Luke Timothy Johnson</p>
+<p>Johnson reads the messianic secret as the structural key to Mark’s Christology: the gospel teaches its readers that confessing Jesus as Messiah and Son of God is only intelligible in light of the suffering servanthood of ch. 14–15. The disciples’ repeated misunderstanding is not Markan polemic against the Twelve but a narrative mirror — every reader must pass through the same interpretive failure before the cross reorients comprehension.</p>
+<p>N.T. Wright &amp; Michael Bird</p>
+<p>Wright and Bird resist purely literary or theological readings of Markan structure and insist on its historical rootedness. The geographical movement from Galilee to Jerusalem is not literary schema but faithfully preserves the shape of Jesus’s actual historical mission. The secrecy commands reflect Jesus’s own strategic avoidance of premature political messianism during a period of heightened revolutionary expectations under Roman occupation.</p>
+<p>The two positions are not mutually exclusive, but they reflect a deep methodological fault line: Johnson prioritizes the text’s final form and its theological function; Wright prioritizes the historical events the text witnesses to. Brown navigates between them by arguing that Mark’s theological architecture preserves reliable memory of Jesus’s historical ministry.</p>
+<h4>V. Core Themes</h4>
+<h4>A. The Suffering Son of God</h4>
+<p>Mark’s opening declaration (“The beginning of the gospel of Jesus Christ, the Son of God” — 1:1) frames the entire narrative as the unveiling of a paradoxical identity: the Son of God who suffers and dies. The Roman centurion’s confession at 15:39 (“Truly this man was the Son of God”) is the narrative climax, positioned at the moment of death rather than resurrection.</p>
+<h4>B. Discipleship as Cruciform Following</h4>
+<p>Mark’s portrayal of the disciples is consistently sobering: they misunderstand (4:13, 6:52, 8:17–21), fail (9:18), seek status (10:35–45), and ultimately flee (14:50). This is not Markan polemic but pedagogy. The triple call to take up the cross (8:34, 9:34–35, 10:43–45) constitutes Mark’s most concentrated biblical teaching. deSilva adds that the honor-shame framework of the Greco-Roman world makes the disciples’ failure narratively intelligible: crucifixion was the ultimate disgrace, and Mark is reshaping the very definition of honor.</p>
+<h4>C. The Urgency of the Kingdom (Euthys)</h4>
+<p>The Markan use of εὐθὺς (euthys / “immediately”) — appearing 41 times — is not mere stylistic roughness but an eschatological signal. The Kingdom is arriving with velocity; Jesus moves without pause from exorcism to healing to proclamation because the inbreaking of God’s reign admits no delay.</p>
+<h4>D. The Abrupt Ending and Its Theological Weight</h4>
+<p>The original Markan ending at 16:8 (“They said nothing to anyone, for they were afraid”) is one of the most debated conclusions in ancient literature. Brown reads it as deliberate and profound. Ehrman reads it as evidence that Mark’s community had not yet developed a robust resurrection-appearance tradition. Wright argues that the abruptness itself performs the eschatological incompletion of the story: the Kingdom has begun but not arrived in fullness; the ending demands a sequel — which the readers must enact.</p>
+<h4>VI. Author’s Intent</h4>
+<p>Mark’s compositional intent, on the consensus of Brown, Wright/Bird, Johnson, and deSilva, is to produce an urgent, community-forming narrative of Jesus for Gentile Christians under pressure — most plausibly a Roman community in the aftermath of Neronian persecution (64 CE). The gospel’s purpose is not biographical but kerygmatic: it summons its audience into the cruciform pattern of Jesus’s own life, in which power is exercised through suffering and authority through service.</p>
+<p>Ehrman agrees on the community-forming function but situates it differently: Mark writes for Christians who need to make sense of the death of Jesus without a developed resurrection-appearance tradition.</p>
+<p>Read in its compositional setting, Mark’s intent may be described as writing from the margin of the Empire for communities under pressure: communities being reshaped by the cross and learning that the cross is not defeat but the pattern of God’s victory.</p>
+<h4>VII. Footnotes</h4>
+<p>1. Eusebius, Historia Ecclesiastica 3.39.15.</p>
+<p>2. Raymond E. Brown, An Introduction to the New Testament (New York: Doubleday, 1997), 126–128.</p>
+<p>3. Bart D. Ehrman, The New Testament: A Historical Introduction to the Early Christian Writings, 7th ed. (Oxford: Oxford University Press, 2020), 72–74.</p>
+<p>4. N.T. Wright and Michael F. Bird, The New Testament in Its World (Grand Rapids: Zondervan Academic, 2019), 496–504.</p>
+<p>5. Luke Timothy Johnson, The Writings of the New Testament, 3rd ed. (Minneapolis: Fortress Press, 2010), 155–162.</p>
+<p>6. David A. deSilva, An Introduction to the New Testament: Contexts, Methods and Ministry Formation, 2nd ed. (Downers Grove: IVP Academic, 2018), 175–185.</p>
+<p>7. Wilhelm Wrede, Das Messiasgeheimnis in den Evangelien (1901); ET The Messianic Secret (Cambridge: James Clarke, 1971).</p></div></div><div class="koContent ko"><div class="card"><h2>마가복음 — 십자가적 복음</h2>
+<p>강의 서사 우리는 마가복음 우선설(Marcan Priority)을 지배적인 작업 모델로 확립했으므로, 마가복음으로 개별 복음서 공부를 시작합니다. 마가복음은 가장 짧은 복음서이지만, 마가복음의 상당 부분이 마태복음과 누가복음에 나타납니다. 마가복음은 기초적인 공관복음 서사, 즉 마태와 누가의 서사를 확장하고 조직하며 재구성하는 일차적인 서사 골격으로 기능합니다. 마가복음은 갑작스럽게 시작됩니다: "하나님의 아들 예수 그리스도 복음의 시작이라." 여기에는 족보도, 탄생 서사도, 유년 시절 이야기나 우주적 서론도 없습니다. 마가복음은 선포, 광야, 세례, 시험, 그리고 긴박한 하나님 나라 선포로 시작합니다. 헬라어 용어 'εὐαγγέλιον / euangelion'은 좋은 소식을 의미합니다. 마가복음에서 구전 선포는 기록된 복음서가 됩니다. 마가복음의 문학적 구조는 2막으로 구성된 드라마로 가르칠 수 있습니다. 제1막(마가복음 1:14~8:26)은 갈릴리에서의 예수의 권위를 강조한다: 가르침, 치유, 축귀, 갈등, 경계 넘기, 그리고 커져가는 오해들이다. 전환점은 마가복음 8:27~31이다. 여기서 베드로는 예수를 메시아로 고백하지만, 예수께서는 즉시 고난을 통해 메시아 직분을 재정의하신다. 제2막(마가복음 8:31~16:8)은 세 번의 수난 예고를 통해 십자가를 향해 움직이며, 각 예고 뒤에는 제자들의 실패가 뒤따른다. '메시아 비밀(Messianic Secret)'은 마가복음의 결정적인 주제 중 하나이다. 예수께서는 자신의 정체성에 대해 반복적으로 침묵을 명령하신다. 문제는 사람들이 틀린 칭호를 사용하는 것이 아니다 — 문제는 사람들이 옳은 칭호를 틀린 기대에 연결한다는 점이다. "메시아"라는 칭호는 고난받는 종의 사역과 분리될 때 위험해진다. 마가는 또한 '샌드위치 기법'이라 불리는 삽입(intercalation) 구조를 사용한다. 한 이야기가 시작되고, 다른 이야기가 그 사이를 가로막은 뒤, 다시 첫 번째 이야기가 재개되는 방식이다. 야이로의 이야기와 혈루증 앓는 여인의 이야기는 서로를 해석한다. 무화과나무와 성전 사건도 서로를 해석한다. 마가복음의 의미는 종종 이야기가 무엇을 말하는가뿐만 아니라, 이야기가 어떻게 배열되어 있는가를 통해 나타난다. 마가복음 10:45은 핵심적인 해석의 열쇠이다: "인자가 온 것은 섬김을 받으려 함이 아니라 도리어 섬기려 하고 자기 목숨을 많은 사람의 대속물로 주려 함이니라." 마가복음의 원래 결말로 보이는 16:8에서, 여인들이 두려움과 침묵 속에 빈 무덤으로부터 도망치는 장면은 독자들의 응답을 촉구합니다. 우리는 침묵할 것입니까? 도망칠 것입니까? 아니면 증인이 될 것입니까?</p>
+<div class="core"><strong>핵심 문장:</strong> 마가는 예수가 오직 십자가를 통해서만 참되게 알려지며, 제자직이란 섬김과 인내, 그리고 증언 속에서 고난받는 인자를 따르는 것임을 가르친다.</div>
+<h4>I. 문학적 개요</h4>
+<table><tr><th>분야</th><th>데이터</th><th>출처 근거</th><th>합의 사항</th><th>논쟁 사항</th></tr><tr><td>저자</td><td>요한 마가 (전승)</td><td>에우세비우스 교회사 3.39에 인용된 파피아스</td><td>광범위한 학술적 지지</td><td>에르만: 익명 저자</td></tr><tr><td>연대</td><td>주후 65~70년경</td><td>주후 70년 이전 혹은 이후; 베스파시아누스 시대</td><td>거의 합의됨</td><td>라이트: 주후 70년 직전</td></tr><tr><td>출처</td><td>로마 (다수설) 혹은 시리아</td><td>내부의 라틴어 표현들; 15:21</td><td>로마 지지가 다수</td><td>드실바: 시리아설도 타당함</td></tr><tr><td>언어</td><td>헬라어 (일상적인 코이네)</td><td>셈어적 기저 문체가 뚜렷함</td><td>만장일치</td><td>—</td></tr><tr><td>분량</td><td>16장, 678절</td><td>가장 짧은 공관복음서</td><td>만장일치</td><td>결말: 16:9~20 논란</td></tr></table>
+<h4>II. 저자, 연대, 및 기록 배경 A. 저자의 문제 마가복음 내부에는 저자에 대한 직접적인 주장이 담겨 있지 않다. 가장 이른 외부 기록은 히에라폴리스의 파피아스(주후 120~130년경)가 남긴 것인데, 에우세비우스의 『교회사』에 보존되어 있다: 파피아스는 마가가 "베드로의 통역관이 되어, 주님의 말씀과 행적 중 그가 기억하는 한 순서대로는 아닐지라도 정확하게 기록했다"고 보고한다. 이 전통은 복음서 기자를 베드로의 선교 사역 및 로마 공동체와 연결시킨다. 레이몬드 브라운 브라운은 신중한 전제를 바탕으로 마가의 전통을 받아들인다. 그는 『신약성경 개론』에서 베드로가 직접 썼을 가능성은 낮지만, 마가가 베드로의 회상을 토대로 집필했다는 전통은 "그럴듯하지 않은 것이 아니며" 복음서 기원에 대한 진정한 역사적 기억을 보존하고 있다고 주장한다. 브라운은 기계적인 받아쓰기를 요구하지 않으면서도 복음서 기자를 베드로의 서클 내에 위치시킨다. 바트 에르만 에르만의 입장은 극명하게 대조된다. 그는 『신약성경: 역사적 입문』에서 마가라는 저자 귀속은 본문을 사도적 권위에 고정시키기 위해 고안된 2세기의 교회사적 구성물이라고 주장한다 에르만의 해석에 따르면 베드로와의 연결은 역사적 사실이 아니라 신학적 변증이다. 브라운과 에르만 사이에는 유의미하지만 절대적이지는 않은 의견 차이가 존재한다. N.T. 라이트와 마이클 버드 (『신약성경과 그 세계』)는 중재적 입장을 취한다: 그들은 마가로의 저자 귀속을 초기 기록이자 지리적으로 타당한 것으로 받아들이지만, 파피아스의 기록을 문자 그대로의 목격자 진술로 과도하게 해석하는 것은 경계한다 루크 티모시 존슨 역시 이 전통이 복음서의 내부 프로필 — 투박한 헬라어, 긴박한 속도, 수난 기사(8:27~16:8)에서의 베드로적 관점 — 과 일치함을 긍정한다. B. 연대 및 역사적 설정 대다수의 비평 학자들은 예루살렘 멸망을 전후한 주후 65~70년경으로 마가복음의 연대를 잡는다. 내부 증거에 대해서는 논란이 있다: 마가복음 13:1~2("돌 하나도 돌 위에 남지 않고")를 어떤 이들은 진정한 예언으로 읽고, 다른 이들은 주후 70년의 사건 이후에 기록된 '사건 후 예언(vaticinium ex eventu)'으로 읽는다 라이트와 버드는 주후 70년 이전 설을 지지하며, 에르만은 주후 70년 이후 설로 기운다 브라운은 네로의 박해 맥락과 성전 파괴 이전의 틀을 모두 수용하는 주후 68~70년경을 제안하며 신중한 중간 지대를 유지한다.</h4>
+<h4>III. 문학적 구조와 개요 마가의 구조는 지리적 움직임과 8:27~30(가이사랴 빌립보에서의 베드로의 고백)에 있는 중앙 기독론적 경첩에 의해 지배된다. 복음서는 두 부분으로 나뉜다: 능력과 선포의 갈릴리 사역(1~8장)과 수난과 죽음의 예루살렘 사역(8~16장)이며, 베드로의 고백은 이 두 부분이 회전하는 축이 된다. — 1:1~1:13 서문: 복음의 시작 — 세례, 음성, 시험 — 1:14~3:35 갈릴리 사역 I: 입증된 권위 — 치유, 축귀, 논쟁 이야기들 — 4:1~6:6a 비유 가르침과 큰 권능 — 바다를 잔잔케 함, 거라사 광인, 야이로의 딸 — 6:6b~8:26 갈릴리 사역 II: 떡과 맹인 — 두 번의 먹이심, 바다 위를 걸으심, 수로보니게 여인 — 8:27~9:1 중앙 경첩: 가이사랴 빌립보의 고백 — "주는 그리스도시니이다" — 첫 번째 수난 예고 — 9:2~10:52 예루살렘으로 가는 여정: 세 번의 수난 예고 — 변형, 제자도 교육, 바디매오 — 11:1~13:37 예루살렘: 갈등과 묵시 — 성전 사건, 논쟁들, 감람산 강화 — 14:1~15:47 수난 서사 — 향유 부음, 최후의 만찬, 겟세마네, 재판, 십자가 처형 — 16:1~8 빈 무덤 — 두려운 침묵 — "원래의 결말" — 16:9~20 이차 결말 (긴 결말) — 주후 70년 이후의 추가 사항; 시내 사본, 바티칸 사본에는 없음</h4>
+<h4>IV. 구조적 분석 및 학술적 논쟁 치유와 정체성 계시 이후에 주어지는 예수의 반복적인 침묵 명령(1:25, 1:44, 3:12, 5:43, 7:36, 8:30, 9:9)인 "메시아 비밀" 모티프는 1901년 빌헬름 브레데의 저서 『메시아 비밀』 이후 지속적인 학술적 논쟁을 불러일으켰다. 마가의 구조적 비밀 사용은 단순한 서사적 장치가 아니라 신학적 주장이다: 예수의 정체성은 오직 십자가라는 관점에서만 올바르게 이해될 수 있다는 것이다. 루크 티모시 존슨 존슨은 메시아 비밀을 마가 기독론의 구조적 열쇠로 읽는다: 복음서는 독자들에게 예수를 메시아와 하나님의 아들로 고백하는 것이 오직 14~15장의 고난받는 종의 맥락 안에서만 이해 가능하다는 것을 가르친다 제자들의 거듭된 오해는 12제자에 대한 마가의 비난이 아니라 서사적 거울이다 — 모든 독자는 십자가가 이해력을 재정립하기 전까지 동일한 해석적 실패를 거쳐야만 한다. N.T. 라이트 &amp; 마이클 버드 라이트와 버드는 마가 구조에 대한 순수하게 문학적 혹은 신학적인 해석을 경계하고 그것의 역사적 뿌리를 강조한다 갈릴리에서 예루살렘으로의 지리적 이동은 문학적 구도가 아니라 예수의 실제 역사적 사역의 형태를 충실히 보존한 것이다 침묵 명령은 로마 점령 하에서 혁명적 기대가 높았던 시기에 조급한 정치적 메시아주의를 피하려 했던 예수 자신의 전략적 선택을 반영한다. 두 입장은 상호 배타적이지 않으나 깊은 방법론적 단층선을 보여준다: 존슨은 텍스트의 최종 형태와 신학적 기능을 우선시하며, 라이트는 텍스트가 증언하는 역사적 사건들을 우선시한다. 브라운은 마가의 신학적 설계가 예수의 역사적 사역에 대한 신뢰할 만한 기억을 보존하고 있다고 주장하며 그 사이를 조율한다.</h4>
+<h4>V. 핵심 주제 A. 고난받는 하나님의 아들 마가의 서두 선언("하나님의 아들 예수 그리스도 복음의 시작" — 1:1)은 전체 서사를 역설적인 정체성의 베일을 벗기는 과정으로 설정한다: 고난받고 죽는 하나님의 아들이다 15:39에서의 로마 백부장의 고백("이 사람은 진실로 하나님의 아들이었도다")은 부활의 순간이 아닌 죽음의 순간에 위치한 서사의 절정이다. B. 제자도: 십자가를 따르는 삶 마가가 묘사하는 제자들의 모습은 일관되게 냉혹하다: 그들은 오해하고(4:13, 6:52, 8:17~21), 실패하며(9:18), 지위를 탐하고(10:35~45), 결국 도망친다(14:50) 이것은 마가의 비난이 아니라 교육(pedagogy)이다. 자기 십자가를 지라는 세 번의 부름(8:34, 9:34~35, 10:43~45)은 마가복음에서 가장 집중적인 성경적 가르침을 구성한다 드실바는 그리스-로마 세계의 명예-수치 체계가 제자들의 실패를 서사적으로 이해 가능하게 만든다고 덧붙인다: 십자가 처형은 궁극적인 불명예였으며, 마가는 명예의 정의 자체를 재형성하고 있다. C. 하나님 나라의 긴박성 (Euthys) 마가가 'εὐθὺς'(euthys / "즉시")라는 단어를 41회나 사용한 것은 단순한 문체적 거칠음이 아니라 종말론적 신호이다 하나님 나라는 빠른 속도로 도래하고 있다; 하나님의 통치가 침투하는 데는 지체함이 없기에 예수는 축귀에서 치유로, 그리고 선포로 쉼 없이 움직이신다. D. 갑작스러운 결말과 그 신학적 무게 16:8에서의 원래 마가복음 결말("그들이 무서워하여 아무에게도 아무 말도 하지 못하더라")은 고대 문학에서 가장 논란이 되는 결말 중 하나이다 브라운은 이를 의도적이고 심오한 것으로 읽는다. 에르만은 마가 공동체가 아직 견고한 부활 발현 전승을 발전시키지 못했다는 증거로 읽는다 라이트는 이 갑작스러움 자체가 이야기의 종말론적 미완성을 수행한다고 주장한다: 하나님 나라는 시작되었으나 아직 충만히 도래하지 않았다; 그 결말은 독자들이 몸소 실천해야 할 후속편을 요구한다.</h4>
+<p>마가의 저술 의도는 제국의 변방에서 압박을 경험한 공동체가 십자가를 패배가 아니라 하나님의 승리의 길로 읽도록 돕는 데 있다.</p>
+<h4>VII. 각주</h4>
+<p>에우세비우스, 『교회사』 3.39.15.</p>
+<p>레이몬드 E. 브라운, 『신약성경 개론』 (뉴욕: 더블데이, 1997), 126~128.</p>
+<p>바트 D. 에르만, 『신약성경: 초기 기독교 기록에 대한 역사적 입문』, 제7판 (옥스퍼드: 옥스퍼드 대학교 출판부, 2020), 72~74.</p>
+<p>N.T. 라이트 및 마이클 F. 버드, 『신약성경과 그 세계』 (그랜드래피즈: 존더반 아카데믹, 2019), 496~504.</p>
+<p>루크 티모시 존슨, 『신약성경의 기록들』, 제3판 (미니애폴리스: 포트리스 프레스, 2010), 155~162.</p>
+<p>데이비드 A. 드실바, 『신약성경 개론: 배경, 방법론 및 사역 형성』, 제2판 (다운즈그로브: IVP 아카데믹, 2018), 175~185.</p>
+<p>빌헬름 브레데, 『복음서에 나타난 메시아 비밀』 (1901); 영문판 『The Messianic Secret』 (케임브리지: 제임스 클라크, 1971).</p>
+</div></div></section>
+<section class="tabPanel" id="t4"><div class="enContent"><div class="card"><h2>Matthew — Fulfillment and Kingdom Righteousness</h2><div class="core"><strong>Core:</strong> Jesus fulfills Israel’s story, forms a community of kingdom righteousness, and sends that community to all nations under Emmanuel presence.</div><h4>Lecture Narrative</h4>
+<p>We now move from Mark to Matthew because Matthew receives the shared Synoptic tradition and gives it a distinctly structured, teaching-oriented, Jewish-Christian shape. Matthew is not simply a longer Mark. It is the Gospel of fulfillment, five major discourses, kingdom righteousness, church formation, and mission to all nations.</p>
+<p>Matthew begins with genealogy because Jesus must be located within Israel’s story. Jesus is son of David and son of Abraham. The infancy narrative includes Joseph, virginal conception, Emmanuel, the Magi, Herod’s violence, flight to Egypt, and settlement in Nazareth. From the beginning, Matthew places Jesus at the intersection of fulfillment, conflict, and mission.</p>
+<p>Fulfillment is one of Matthew’s central interpretive patterns. Matthew frequently uses formula citations such as “All this took place to fulfill what the Lord had spoken through the prophet.” Fulfillment should not be reduced to simple prediction and completion — in Matthew, fulfillment means that Jesus brings Israel’s Scripture, story, righteousness, and mission to their intended goal.</p>
+<p>Matthew presents Jesus as a Moses-like figure, yet greater than Moses. The Sermon on the Mount displays this authority: “You have heard that it was said ... but I say to you.” Jesus does not abolish the Law; he fulfills it by revealing its deeper intention. Matthew’s literary architecture is built around narrative and discourse — Jesus acts, then teaches.</p>
+<p>Matthew is the only Gospel to use ἐκκλησία / ekklesia. Matthew’s assembly is formed by Jesus’ teaching, sustained by Emmanuel presence, and ordered through reconciliation. The Great Commission (28:18–20) concludes with a mission to all nations and the promise: “I am with you always.” Matthew begins with Emmanuel, God with us, and ends with presence.</p>
+<h4>I. Literary Overview</h4>
+<h4>II. Author, Date, and Provenance</h4>
+<h4>A. Authorship and the Apostolic Claim</h4>
+<p>Matthew is the only gospel to name a tax collector as its author within the narrative itself (9:9; 10:3). Papias offers the enigmatic statement that “Matthew composed the oracles in the Hebrew language.” Most critical scholars read the extant Greek Matthew as an original Greek composition, not a translation, rendering Papias’s statement either inaccurate, referring to a proto-Matthew, or meaning something other than our present gospel.</p>
+<p>Raymond Brown</p>
+<p>Brown argues that the apostle Matthew almost certainly did not write the gospel as we have it: an eyewitness to Jesus’s ministry would have had no reason to appropriate 90% of Mark’s material. However, Brown allows for a Matthean school or community, and suggests that the Matthean tax-collector tradition may preserve a genuine memory of Matthew’s role in transmitting Jesus-sayings.</p>
+<p>Bart Ehrman</p>
+<p>Ehrman is categorical: the apostle Matthew did not write this gospel. No eyewitness to Jesus’s ministry would have been so dependent on Mark’s narrative. The title “According to Matthew” reflects second-century ecclesiastical attribution, not authorial self-identification.</p>
+<p>Wright and Bird defend the essential reliability of the apostolic tradition, suggesting that Matthew the apostle may have been the source of the “M tradition,” even if a later scribe-disciple produced the final Greek form. This composite authorship model is also sympathetically treated by deSilva and partially by Johnson.</p>
+<h4>B. Date and the Jewish-Christian Crisis</h4>
+<p>Matthew’s post-70 CE date is virtually certain on source-critical grounds: the evangelist uses Mark as a primary source and appears to reflect the aftermath of the Temple’s destruction in the parable of the Wedding Banquet (22:7). The community Matthew addresses is undergoing a painful separation from synagogue Judaism — the “parting of the ways” — evidenced by the repeated formula “their synagogues.” Brown situates Matthew in a Jewish-Christian community in painful transition: still Torah-observant yet also claiming Jesus as the definitive Torah-interpreter who supersedes Mosaic legislation.</p>
+<h4>III. Literary Structure and Outline</h4>
+<p>Matthew’s structure is distinctive among the synoptics: it is organized around five great discourse blocks, each ending with the formula “When Jesus had finished saying these things” (7:28, 11:1, 13:53, 19:1, 26:1). This fivefold structure is almost certainly a deliberate echo of the Pentateuch, presenting Jesus as the New Moses who delivers the new Torah from a new Sinai.</p>
+<p class="outline">— 1:1–2:23 Prologue: Birth Narrative and Fulfillment Citations — Five formula quotations; Davidic-Abrahamic genealogy</p>
+<p class="outline">— 3:1–4:25 Preparation: Baptism, Temptation, Galilean Opening — John, Spirit, Temptation</p>
+<p class="outline">— 5:1–7:29 Discourse I: Sermon on the Mount — Beatitudes, Antitheses, Lord’s Prayer, Kingdom Ethics</p>
+<p class="outline">— 8:1–10:42 Narrative I + Discourse II: Mission Discourse — Ten Miracle Pericopes; Mission of the Twelve</p>
+<p class="outline">— 11:1–13:52 Narrative II + Discourse III: Parabolic Discourse — John’s Question; Parables of the Kingdom</p>
+<p class="outline">— 13:53–18:35 Narrative III + Discourse IV: Community Discourse — Feeding, Peter’s Confession, Transfiguration; Church Order</p>
+<p class="outline">— 19:1–25:46 Narrative IV + Discourse V: Eschatological Discourse — Jerusalem Entry, Temple, Parables of Judgment, Olivet Discourse</p>
+<p class="outline">— 26:1–28:20 Passion, Death, Resurrection, Commission — Arrest, Trials, Crucifixion, Empty Tomb, Great Commission</p>
+<h4>IV. Structural Analysis: The Five Discourses</h4>
+<p>The Pentateuchal structure is the dominant literary key to Matthew, but scholars debate its significance. Brown treats it as both literary structure and theological argument: Matthew’s Jesus does not replace Moses but fulfills him, presenting himself as the authoritative interpreter of Israel’s covenant tradition. The Sermon on the Mount is the hermeneutical center of the gospel.</p>
+<p>David deSilva</p>
+<p>deSilva emphasizes the social-rhetorical dimension of Matthew’s structure. The five-discourse pattern would have resonated powerfully with both Jewish Christians and Greco-Roman audiences accustomed to biographies organized around a teacher’s central teachings.</p>
+<p>Bart Ehrman</p>
+<p>Ehrman reads the Pentateuchal structure as evidence of the community’s theological agenda: a Jewish-Christian group making the case within a predominantly Jewish milieu that Jesus, not the rabbis emerging from Yavneh after 70 CE, is the legitimate heir and interpreter of Israel’s covenantal tradition.</p>
+<h4>V. Core Themes</h4>
+<h4>A. Fulfillment Christology</h4>
+<p>Matthew’s most distinctive literary feature is the formula citation: “This was to fulfill what was spoken by the prophet.” This is not proof-texting but a sophisticated intertextual argument: the entire arc of Israel’s scriptures is re-read through the lens of Jesus, and Jesus is re-read through the lens of Israel’s scriptures.</p>
+<h4>B. The Kingdom of Heaven</h4>
+<p>Matthew employs “Kingdom of Heaven” (basileia ton ouranon) rather than “Kingdom of God” — a Jewish circumlocution for the divine name. The Kingdom in Matthew is both present and future, demanding ethical response now.</p>
+<h4>C. The Church (Ekklesia) and Community Formation</h4>
+<p>Matthew is the only gospel to use the word ekklesia (16:18, 18:17), and the Community Discourse of ch. 18 functions as the earliest known manual of church order. This communal focus reflects Matthew’s compositional context: a community navigating post-70 CE institutional questions of discipline, forgiveness, and authority without the Temple as its center.</p>
+<h4>D. The Great Commission and Universal Mission</h4>
+<p>The gospel’s conclusion (28:16–20) is its most ecclesiologically significant passage: the Risen Jesus commissions the Eleven to “make disciples of all nations,” dismantling the earlier restriction to “the lost sheep of the house of Israel.” Wright and Bird read this as the climactic moment of Matthew’s Israel-and-nations theology.</p>
+<h4>VI. Author’s Intent</h4>
+<p>Matthew’s compositional intent is the most ecclesially focused of the four gospels. Brown’s formulation is definitive: Matthew writes for a mixed Jewish-Gentile community, probably in Antioch of Syria, engaged in the painful process of self-definition vis-à-vis formative Judaism and the Gentile mission. The gospel’s intent is simultaneously apologetic, catechetical, and missional.</p>
+<p>The tension Johnson identifies in Matthew’s structure between Torah-fulfillment and Torah-transcendence is not a logical contradiction but the community’s lived both/and: a community that has not yet sorted out where the boundaries of the new covenant lie, and whose gospel refuses to sort it out neatly because the tension itself is generative.</p>
+<h4>VII. Footnotes</h4>
+<p>1. Brown, Introduction to the New Testament, 208–211.</p>
+<p>2. Ehrman, The New Testament, 103–107.</p>
+<p>3. Wright and Bird, The New Testament in Its World, 524–530.</p>
+<p>4. Johnson, Writings of the New Testament, 171–193.</p>
+<p>5. deSilva, Introduction to the New Testament, 208–228.</p>
+<p>6. J. Andrew Overman, Matthew’s Gospel and Formative Judaism (Minneapolis: Fortress, 1990).</p>
+<p>7. David Bauer, The Structure of Matthew’s Gospel (Sheffield: Almond Press, 1988).</p></div></div><div class="koContent ko"><div class="card"><h2>마태복음 — 성취와 하나님 나라의 의</h2>
+<p>강의 서사</p>
+<p>우리는 이제 마가에서 마태로 넘어갑니다. 왜냐하면 마태는 공유된 공관복음 전승을 받아들여 그것에 뚜렷하게 구조화되고, 가르침 지향적이며, 유대-기독교적인 형태를 부여하기 때문입니다.</p>
+<p>마태복음은 단순히 길이가 길어진 마가복음이 아닙니다. 그것은 성취, 다섯 개의 주요 강화, 하나님 나라의 의, 교회 형성, 그리고 모든 민족을 향한 선교의 복음서입니다.</p>
+<p>마태는 족보로 시작합니다. 왜냐하면 예수는 이스라엘의 이야기 안에 위치해야 하기 때문입니다.</p>
+<p>예수는 다윗의 자손이요 아브라함의 자손입니다. 탄생 서사에는 요셉, 동정녀 잉태, 임마누엘, 동방박사, 헤롯의 폭력, 애굽으로의 피난, 그리고 나사렛 정착이 포함됩니다.</p>
+<p>처음부터 마태는 예수를 성취, 갈등, 그리고 선교의 교차점에 위치시킵니다.</p>
+<p>성취는 마태의 중심적인 해석 패턴 중 하나입니다. 마태는 "주께서 선지자를 통하여 하신 말씀을 이루려 하심이니"와 같은 공식 인용구를 자주 사용합니다.</p>
+<p>성취를 단순한 예측과 완성으로 축소해서는 안 됩니다 — 마태복음에서 성취란 예수께서 이스라엘의 성경, 이야기, 의, 그리고 선교를 본래 의도된 목표로 이끌어 가신다는 것을 의미합니다.</p>
+<p>마태는 예수를 모세와 같으나 모세보다 위대한 인물로 제시합니다.</p>
+<p>산상수훈은 이러한 권위를 보여줍니다: "너희가 들었으나 ... 나는 너희에게 이르노니."</p>
+<p>예수께서는 율법을 폐하지 않으십니다; 그는 율법의 더 깊은 의도를 계시하심으로써 율법을 성취하십니다.</p>
+<p>마태의 문학적 구조는 서사와 강화(discourse)를 중심으로 구축됩니다 — 예수께서 행하시고, 그 다음에 가르치십니다.</p>
+<p>마태는 ἐκκλησία / ekklesia(교회)를 사용하는 유일한 복음서입니다.</p>
+<p>마태의 총회(assembly)는 예수의 가르침에 의해 형성되고, 임마누엘의 임재에 의해 유지되며, 화해를 통해 질서가 잡힙니다.</p>
+<p>지상 대명령(28:18–20)은 모든 민족을 향한 선교와 "내가 세상 끝날까지 너희와 항상 함께 있으리라"는 약속으로 결론을 맺습니다.</p>
+<p>마태복음은 '임마누엘, 하나님이 우리와 함께 계시다'로 시작하여 임재로 끝납니다.</p>
+<div class="core"><strong>핵심 문장:</strong> 마태는 예수가 이스라엘의 이야기를 성취하시고, 하나님 나라의 의의 공동체를 형성하시며, 임마누엘의 임재 약속 아래 모든 민족을 가르치도록 그 공동체를 파송하심을 가르친다.</div>
+<h4>I. 문학적 개요</h4>
+<table><tr><th>분야</th><th>데이터</th><th>출처 근거</th><th>합의 사항</th><th>논쟁 사항</th></tr><tr><td>저자</td><td>사도 마태 (전승)</td><td>파피아스; 초기 교부들의 합의</td><td>전통적인 귀속</td><td>에르만/브라운: 익명의 서기관</td></tr><tr><td>연대</td><td>주후 80~90년경</td><td>주후 70년 이후; 마가복음 사용</td><td>거의 합의됨</td><td>일부 보수주의자들: 주후 70년 이전</td></tr><tr><td>출처</td><td>수리아 안디옥이 가장 유력함</td><td>유대-이방인 공동체; 헬라어</td><td>다수설</td><td>드실바: 열린 문제</td></tr><tr><td>언어</td><td>헬라어 (세련됨; 번역본 아님)</td><td>셈어적 특징이 존재하나 문학적임</td><td>만장일치</td><td>—</td></tr><tr><td>분량</td><td>28장, 1,071절</td><td>공관복음 중 가장 김</td><td>만장일치</td><td>—</td></tr></table>
+<h4>II. 저자, 연대, 및 기록 배경</h4>
+<h4>A. 저자직과 사도적 주장</h4>
+<p>마태복음은 서사 내부에서 세리를 저자로 지목하는 유일한 복음서이다(9:9; 10:3).</p>
+<p>파피아스는 "마태가 히브리 방언으로 어록을 엮었다"라는 수수께끼 같은 진술을 남겼다.</p>
+<p>대다수 비평 학자들은 현존하는 헬라어 마태복음을 번역본이 아닌 원래의 헬라어 창작물로 읽으며, 파피아스의 진술이 부정확하거나, 원-마태복음(proto-Matthew)을 지칭하거나, 혹은 현재의 복음서가 아닌 다른 것을 의미한다고 본다.</p>
+<h4>레이몬드 브라운</h4>
+<p>브라운은 사도 마태가 우리가 가진 형태의 복음서를 썼을 가능성은 거의 없다고 주장한다: 예수 사역의 목격자가 마가복음 자료의 90%를 차용할 이유가 없었을 것이기 때문이다.</p>
+<p>그러나 브라운은 마태 학파나 공동체의 존재를 허용하며, 세리 마태 전통이 예수의 말씀을 전수하는 데 있어서 마태의 역할에 대한 진정한 기억을 보존하고 있을 수 있다고 제안한다.</p>
+<h4>바트 에르만</h4>
+<p>에르만은 단호하다: 사도 마태는 이 복음서를 쓰지 않았다.</p>
+<p>예수 사역의 어떤 목격자도 마가의 서사에 그토록 의존하지는 않았을 것이다.</p>
+<p>"마태에 따른"이라는 제목은 저자 자신의 식별이 아니라 2세기의 교회사적 귀속을 반영한다.</p>
+<p>라이트와 버드는 사도적 전통의 본질적인 신뢰성을 방어하면서, 비록 후대의 서기관-제자가 최종 헬라어 형태를 만들어냈을지라도 사도 마태가 "M 전승"의 출처였을 수 있다고 제안한다.</p>
+<p>이러한 복합 저자 모델은 드실바에 의해서도 호의적으로 다루어지며 존슨에 의해서도 부분적으로 수용된다.</p>
+<h4>B. 연대 및 유대-기독교 위기</h4>
+<p>마태복음의 주후 70년 이후 연대는 자료 비평적 근거에서 거의 확실하다: 복음서 기자는 마가를 주요 자료로 사용하며 혼인 잔치 비유(22:7)에서 성전 파괴의 여파를 반영하는 것으로 보인다.</p>
+<p>마태가 말을 건네는 공동체는 회당 유대교로부터 고통스러운 분리 — "길의 갈라짐" — 를 겪고 있으며, 이는 "그들의 회당"이라는 반복되는 공식을 통해 증명된다.</p>
+<p>브라운은 마태복음을 고통스러운 전환기에 있는 유대-기독교 공동체에 위치시킨다: 여전히 토라를 준수하지만 동시에 예수를 모세의 율법을 대체하는 결정적인 토라 해석자로 주장하는 공동체이다.</p>
+<h4>III. 문학적 구조와 개요</h4>
+<p>마태복음의 구조는 공관복음 중에서 독특하다: 그것은 다섯 개의 거대한 강화 덩어리를 중심으로 조직되며, 각 강화는 "예수께서 이 말씀을 마치시매"(7:28, 11:1, 13:53, 19:1, 26:1)라는 공식으로 끝난다.</p>
+<p>이 오중 구조는 모세오경을 의도적으로 반영한 것이 거의 확실하며, 예수를 새로운 시내산에서 새로운 토라를 전달하는 새로운 모세로 제시한다.</p>
+<p class="outline">— 1:1~2:23 서론: 탄생 서사와 성취 인용구 — 다섯 개의 공식 인용구; 다윗-아브라함의 족보</p>
+<p class="outline">— 3:1~4:25 준비: 세례, 시험, 갈릴리 시작 — 요한, 성령, 시험</p>
+<p class="outline">— 5:1~7:29 강화 I: 산상수훈 — 팔복, 반제, 주기도문, 하나님 나라의 윤리</p>
+<p class="outline">— 8:1~10:42 서사 I + 강화 II: 선교 강화 — 열 개의 기적 페리코페; 열두 제자의 파송</p>
+<p class="outline">— 11:1~13:52 서사 II + 강화 III: 비유 강화 — 요한의 질문; 하나님 나라의 비유들</p>
+<p class="outline">— 13:53~18:35 서사 III + 강화 IV: 공동체 강화 — 먹이심, 베드로의 고백, 변화산; 교회 질서</p>
+<p class="outline">— 19:1~25:46 서사 IV + 강화 V: 종말론적 강화 — 예루살렘 입성, 성전, 심판의 비유들, 감람산 강화</p>
+<p class="outline">— 26:1~28:20 수난, 죽음, 부활, 대위임령 — 체포, 재판, 십자가 처형, 빈 무덤, 지상 대명령</p>
+<h4>IV. 구조적 분석: 다섯 개의 강화</h4>
+<p>모세오경의 구조는 마태복음의 지배적인 문학적 열쇠이지만, 학자들은 그 의미에 대해 논쟁한다.</p>
+<p>브라운은 이를 문학적 구조이자 신학적 논증으로 취급한다: 마태의 예수는 모세를 대체하는 것이 아니라 성취하며, 이스라엘의 언약 전통에 대한 권위 있는 해석자로 자신을 제시한다.</p>
+<p>산상수훈은 이 복음서의 해석학적 중심이다.</p>
+<h4>데이비드 드실바</h4>
+<p>드실바는 마태 구조의 사회-수사학적 차원을 강조한다. 다섯 개의 강화 패턴은 스승의 중심 가르침을 중심으로 조직된 전기에 익숙한 유대 기독교인 및 그리스-로마 청중 모두에게 강력한 반향을 일으켰을 것이다.</p>
+<h4>바트 에르만</h4>
+<p>에르만은 모세오경 구조를 공동체의 신학적 의제의 증거로 읽는다: 주후 70년 이후 얌니아에서 부상하는 랍비들이 아니라 예수가 이스라엘의 언약 전통의 합법적 상속자요 해석자임을 주로 유대적인 환경 내에서 논증하는 유대-기독교 그룹의 의제라는 것이다.</p>
+<h4>V. 핵심 주제</h4>
+<h4>A. 성취 기독론</h4>
+<p>마태의 가장 독특한 문학적 특징은 공식 인용구이다: "이는 선지자로 하신 말씀을 이루려 하심이라."</p>
+<p>이것은 증명구(proof-texting)를 나열하는 것이 아니라 정교한 상호 텍스트적 논증이다: 이스라엘 성경의 전체 궤적은 예수를 렌즈로 삼아 다시 읽혀지고, 예수는 이스라엘 성경을 렌즈로 삼아 다시 읽혀진다.</p>
+<h4>B. 하나님 나라 (천국)</h4>
+<p>마태는 "하나님의 나라" 대신에 "천국(basileia ton ouranon)"을 사용한다 — 이는 신적 이름을 피하기 위한 유대적 완곡어법이다.</p>
+<p>마태복음에서 하나님 나라는 현재적이면서도 미래적이며, 지금 당장의 윤리적 응답을 요구한다.</p>
+<h4>C. 교회 (Ekklesia)와 공동체 형성</h4>
+<p>마태복음은 ekklesia(16:18, 18:17)라는 단어를 사용하는 유일한 복음서이며, 18장의 공동체 강화는</p>
+<p>가장 초기로 알려진 교회 질서 지침서의 기능을 한다.</p>
+<p>이러한 공동체적 초점은 마태의 집필 맥락을 반영한다: 성전이 중심에 없는 상태에서 규율, 용서, 그리고 권위라는 주후 70년 이후의 제도적 문제들을 탐색하는 공동체의 모습이다.</p>
+<h4>D. 지상 대명령과 보편적 선교</h4>
+<p>복음서의 결론(28:16–20)은 교회론적으로 가장 중요한 단락이다: 부활하신 예수께서 열한 제자에게 "모든 민족을 제자로 삼으라"고 위임하시며, 이전에 "이스라엘 집의 잃어버린 양"에게만 국한되었던 제한을 허무신다.</p>
+<p>라이트와 버드는 이것을 마태의 이스라엘과 열방 신학의 절정의 순간으로 읽는다.</p>
+<h4>VI. 저자의 의도</h4>
+<p>마태의 집필 의도는 네 복음서 중 교회를 향한 초점이 가장 뚜렷하다.</p>
+<p>브라운의 공식화가 결정적이다: 마태는 형성기 유대교 및 이방인 선교와 관련하여 자기 정의(self-definition)를 내리는 고통스러운 과정에 관여하고 있는, 아마도 수리아 안디옥에 있었을 유대-이방인 혼합 공동체를 위해 글을 쓴다.</p>
+<p>복음서의 의도는 변증적이면서 동시에 교리문답적이며 선교적이다.</p>
+<p>토라-성취와 토라-초월 사이의 마태 구조 안에서 존슨이 식별해 낸 긴장감은 논리적 모순이 아니라 공동체가 살아낸 '둘 다(both/and)'의 실재이다: 새 언약의 경계가 어디에 놓여 있는지 아직 깔끔하게 정리하지 못한 공동체이며, 그 긴장 자체에 생산성이 있기에 깔끔하게 정리하기를 거부하는 복음서를 가진 공동체이다.</p>
+<h4>VII. 각주</h4>
+<p>브라운, 『신약성경 개론』, 208~211.</p>
+<p>에르만, 『신약성경』, 103~107.</p>
+<p>라이트 및 버드, 『신약성경과 그 세계』, 524~530.</p>
+<p>존슨, 『신약성경의 기록들』, 171~193.</p>
+<p>드실바, 『신약성경 개론』, 208~228.</p>
+<p>J. 앤드류 오버만, 『마태복음과 형성기 유대교』 (미니애폴리스: 포트리스, 1990).</p>
+<p>데이비드 바우어, 『마태복음의 구조』 (셰필드: 아몬드 프레스, 1988).</p>
+</div></div></section>
+<section class="tabPanel" id="t5"><div class="enContent"><div class="card"><h2>Luke — Mercy, Reversal, and Mission</h2><div class="core"><strong>Core:</strong> Jesus is the Spirit-led Savior whose journey to Jerusalem opens mercy, reversal, forgiveness, and mission for the poor, outsiders, sinners, and all nations.</div><h4>Lecture Narrative</h4>
+<p>Luke completes our study of the Synoptic Gospels. Like Matthew, Luke uses Mark and Q, but Luke shapes shared tradition toward universal salvation, mercy, social reversal, prayer, the Holy Spirit, concern for the poor, visibility of women, attention to outsiders, and the journey to Jerusalem.</p>
+<p>Luke is the first volume of Luke-Acts. It traces the movement of salvation from Jesus’ ministry to the spread of the gospel from Jerusalem toward the nations. Luke writes with the style of an educated Greek-speaking historian and dedicates the work to Theophilus in order to provide an orderly account and assurance concerning Christian instruction already received.</p>
+<p>Luke’s infancy narratives already announce his major themes. The Magnificat praises God’s reversal of social order: the lowly are lifted, the hungry filled, the powerful brought down. Jesus’ Nazareth sermon in Luke 4 functions as his mission statement: good news to the poor, release to captives, sight to the blind, freedom for the oppressed, and the year of the Lord’s favor. Salvation is not abstract — it moves toward bodies, social locations, and concrete need.</p>
+<p>Luke makes women visible as recipients, supporters, witnesses, and participants. Luke repeatedly centers outsiders: Samaritans, tax collectors, sinners, the poor, and Gentiles. The Good Samaritan redefines neighbor as the one who shows mercy. Zacchaeus shows salvation coming to a tax collector. The Prodigal Son reveals God’s joy over the return of the lost.</p>
+<p>The Holy Spirit and prayer guide Luke’s narrative. Jesus is full of the Spirit, returns in the power of the Spirit, and prays at decisive moments. Luke’s passion narrative differs in tone from Mark’s — Jesus prays for his executioners, promises paradise to the repentant criminal, and dies entrusting himself to the Father.</p>
+<h4>I. Literary Overview</h4>
+<h4>II. Author, Date, and Provenance</h4>
+<h4>A. Authorship and the Lukan Corpus</h4>
+<p>Luke-Acts constitutes a single two-volume work addressed to the same patron, Theophilus. The traditional identification with “Luke the physician,” Paul’s companion, rests on the “we” passages in Acts, which have been read as eyewitness first-person narration.</p>
+<p>Raymond Brown</p>
+<p>Brown argues that the “we” passages of Acts are the strongest evidence for the Lukan authorship tradition, but that they do not decisively settle the question. What is certain is that the author is a sophisticated historian and biblical interpreter of the highest competence in the Hellenistic literary tradition.</p>
+<p>Bart Ehrman</p>
+<p>Ehrman argues that the author of Luke-Acts was almost certainly not a companion of Paul, on the grounds that the theology of Luke-Acts diverges significantly from authentic Pauline letters on key points.</p>
+<p>Johnson takes the tradition of Lukan authorship seriously, arguing that the stylistic unity of Luke-Acts, the medical terminology, and the coherence of the “we” passages constitute a cumulative case for a Pauline associate. Wright and Bird affirm Lukan authorship as the most historically plausible reading.</p>
+<h4>B. The Preface and Hellenistic Historiography</h4>
+<p>Luke 1:1–4 is the most significant prologue in the New Testament canon. Written in elevated Attic prose, it explicitly places the gospel within the tradition of Hellenistic historiography: the author claims to have “investigated everything carefully from the very first” and to be writing “an orderly account.” deSilva demonstrates that the prologue conforms to the conventions of Hellenistic historical prologues in the tradition of Thucydides and Polybius.</p>
+<h4>III. Literary Structure and Outline</h4>
+<p>Luke’s structure is organized around a programmatic journey: from Galilee to Jerusalem (chs. 1–19) and from Jerusalem to Rome (Acts). The central “travel narrative” or Lukan “great insertion” (9:51–19:44) constitutes the theological heart of the gospel and its richest source of L-tradition material.</p>
+<p class="outline">— 1:1–4 Prologue to Theophilus — Hellenistic historiographical preface</p>
+<p class="outline">— 1:5–2:52 Infancy Narrative — Annunciations, Magnificat, Benedictus, Birth, Presentation, Boy Jesus</p>
+<p class="outline">— 3:1–4:13 Preparation: John, Baptism, Genealogy, Temptation — Universal genealogy to Adam; 40-day temptation</p>
+<p class="outline">— 4:14–9:50 Galilean Ministry — Nazareth Manifesto; Healings; Call of Twelve; Feeding</p>
+<p class="outline">— 9:51–19:44 The Journey to Jerusalem (Great Insertion) — Samaritans; Good Samaritan; Mary/Martha; Prodigal Son; Zacchaeus</p>
+<p class="outline">— 19:45–21:38 Jerusalem: Temple and Discourse — Temple Cleansing; Controversies; Eschatological Discourse</p>
+<p class="outline">— 22:1–23:56 Passion Narrative — Last Supper; Gethsemane; Trials; Crucifixion; Burial</p>
+<p class="outline">— 24:1–53 Resurrection Appearances and Ascension — Empty Tomb; Emmaus Road; Jerusalem Appearance; Ascension</p>
+<h4>IV. Structural Analysis: The Lukan Travel Narrative</h4>
+<p>The travel narrative (9:51–19:44) is Luke’s most distinctive structural contribution and the location of his most celebrated parables: the Good Samaritan, the Prodigal Son, the Rich Man and Lazarus, and the Pharisee and Tax Collector. Brown notes that this section contains almost no geographical movement despite its “journey” framing — suggesting that the journey metaphor is not primarily geographical but spiritual and eschatological: the journey toward Jerusalem is the journey toward the cross.</p>
+<p>Luke Timothy Johnson</p>
+<p>Johnson argues that the ‘journey to Jerusalem’ enacts Luke’s central claim: salvation is not a static possession but a dynamic movement of the People of God toward the place where God chooses to act definitively.</p>
+<p>Wright and Bird situate the travel narrative within the context of Jewish pilgrimage theology: going up to Jerusalem was, for Second Temple Judaism, the paradigmatic act of covenantal faithfulness. Luke’s Jesus makes this journey as the definitive Israelite pilgrim, recapitulating the story of Israel’s return from exile.</p>
+<h4>V. Core Themes</h4>
+<h4>A. Salvation for the Marginalized: The Lukan Reversal</h4>
+<p>Luke’s most distinctive contribution is his theology of reversal. The Magnificat announces the program: “He has brought down the powerful from their thrones and lifted up the lowly.” This is not a metaphor for spiritual poverty but a material claim about the direction of God’s Kingdom: God’s reign moves toward the margin.</p>
+<h4>B. The Holy Spirit and Prayer</h4>
+<p>Luke’s gospel is saturated with the Spirit and with prayer in a way unparalleled in Mark or Matthew. Jesus prays at every major turning point, and the Spirit descends, speaks, and drives the narrative forward. deSilva notes that for Luke, the Spirit is not an abstraction but a narrative actor.</p>
+<h4>C. Women, Gentiles, and Social Outsiders</h4>
+<p>Luke mentions women in contexts where the other synoptics do not. Samaritans appear in positive roles. Tax collectors and sinners are consistently the recipients of grace. This is a theological claim: God’s salvation moves toward the margin, the excluded, and the ritually and socially impure.</p>
+<h4>D. Jerusalem and Universal History</h4>
+<p>Luke alone frames the gospel within universal history: the birth narrative is dated by Roman imperial census, and John’s ministry is dated by an elaborate list of political rulers. Jesus’s ministry is not a private Jewish affair but an event within and for the oikoumene — the entire inhabited world.</p>
+<h4>VI. Author’s Intent</h4>
+<p>Luke’s compositional intent is the most explicit of the four gospels, stated in the prologue: to provide an “orderly account” that gives Theophilus “the truth concerning the things about which you have been instructed.” This apologetic-catechetical intent shapes every literary decision in the gospel.</p>
+<p>Beyond the stated intent, the agenda of Luke is the demonstration that the God of Israel is the God of all nations, that Jesus’s ministry fulfills Israel’s prophetic hopes while simultaneously breaking open their ethnic and cultic limitations, and that the community of disciples is the rightful heir of Israel’s covenantal identity.</p>
+<h4>VII. Footnotes</h4>
+<p>1. Brown, Introduction to the New Testament, 267–275.</p>
+<p>2. Ehrman, The New Testament, 128–138.</p>
+<p>3. Johnson, Writings of the New Testament, 213–229.</p>
+<p>4. deSilva, Introduction to the New Testament, 271–298.</p>
+<p>5. Wright and Bird, The New Testament in Its World, 560–575.</p>
+<p>6. Turid Karlsen Seim, The Double Message: Patterns of Gender in Luke-Acts (Nashville: Abingdon, 1994).</p>
+<p>7. David Tiede, Prophecy and History in Luke-Acts (Philadelphia: Fortress, 1980).</p></div></div><div class="koContent ko"><div class="card"><h2>누가복음 — 긍휼, 역전, 선교</h2>
+<p>강의 서사</p>
+<p>누가는 공관복음 공부를 완성합니다. 마태와 같이 누가는 마가와 Q를 사용하지만, 누가는 공유된 전승을 보편적 구원, 자비, 사회적 역전, 기도, 성령, 가난한 자들에 대한 관심, 여성들의 가시성, 외부인들에 대한 주목, 그리고 예루살렘으로의 여정을 향해 형성합니다.</p>
+<p>누가복음은 누가-행전의 제1권입니다. 이 책은 예수의 사역으로부터 예루살렘에서 열방을 향해 복음이 확산되는 구원의 움직임을 추적합니다.</p>
+<p>누가는 교육받은 헬라어 사용 역사가의 문체로 글을 쓰며, 이미 받은 그리스도인 교육에 관한 질서 있는 기록과 확신을 제공하기 위해 이 저작을 데오빌로에게 헌정합니다.</p>
+<p>누가의 탄생 서사는 이미 그의 주요 주제들을 예고합니다. 마리아의 찬가(Magnificat)는 사회 질서에 대한 하나님의 역전을 찬양합니다: 비천한 자는 높여지고, 주리는 자는 배불려지며, 권세 있는 자는 내려옵니다.</p>
+<p>누가복음 4장의 예수의 나사렛 설교는 그의 사명 선언문 역할을 합니다: 가난한 자에게 기쁜 소식을, 포로 된 자에게 해방을, 눈먼 자에게 다시 보게 함을, 눌린 자에게 자유를, 그리고 주의 은혜의 해를 선포하는 것입니다.</p>
+<p>구원은 추상적인 것이 아닙니다 — 그것은 육체, 사회적 위치, 그리고 구체적인 필요를 향해 움직입니다.</p>
+<p>누가는 여성들을 수혜자, 후원자, 목격자, 그리고 참여자로 가시화합니다.</p>
+<p>누가는 반복적으로 외부인들을 중심에 둡니다: 사마리아인, 세리, 죄인, 가난한 자, 그리고 이방인들입니다.</p>
+<p>선한 사마리아인 비유는 이웃을 자비를 베푸는 자로 재정의합니다. 삭개오는 세리에게 임한 구원을 보여줍니다.</p>
+<p>탕자의 비유는 잃어버린 자의 귀환에 대한 하나님의 기쁨을 드러냅니다.</p>
+<p>성령과 기도는 누가의 서사를 인도합니다. 예수는 성령이 충만하고, 성령의 능력으로 돌아오며, 결정적인 순간마다 기도하십니다.</p>
+<p>누가의 수난 서사는 마가와 톤이 다릅니다 — 예수는 자신을 처형하는 자들을 위해 기도하시고, 회개하는 죄수에게 낙원을 약속하시며, 자신을 아버지께 맡기며 죽으십니다.</p>
+<div class="core"><strong>핵심 문장:</strong> 누가는 예수가 성령이 이끄시는 구원자이며, 그의 예루살렘 여정이 가난한 자, 외부인, 죄인, 그리고 모든 민족을 향한 자비, 역전, 용서, 그리고 선교를 연다는 것을 가르친다.</div>
+<h4>I. 문학적 개요</h4>
+<table><tr><th>분야</th><th>데이터</th><th>출처 근거</th><th>합의 사항</th><th>논쟁 사항</th></tr><tr><td>저자</td><td>바울의 동역자 누가</td><td>골 4:14; 몬 24; 딤후 4:11</td><td>강력한 초기 전승</td><td>에르만: 가명/익명</td></tr><tr><td>연대</td><td>주후 80~90년경</td><td>마가 이후; 사도행전은 누가복음이 먼저임을 암시</td><td>거의 합의됨</td><td>사도행전 연대가 누가 연대에 영향을 줌</td></tr><tr><td>출처</td><td>알 수 없음; 아마도 안디옥, 그리스</td><td>수신자 데오빌로; 사도행전 지리</td><td>논쟁 중</td><td>합의된 바 없음</td></tr><tr><td>언어</td><td>공관복음 중 가장 문학적인 헬라어</td><td>다양한 격조; 70인역의 영향</td><td>만장일치</td><td>—</td></tr><tr><td>분량</td><td>24장, 1,151절</td><td>구절 수 기준으로 가장 긴 복음서</td><td>만장일치</td><td>—</td></tr></table>
+<h4>II. 저자, 연대, 및 기록 배경</h4>
+<h4>A. 저자직과 누가 저작물</h4>
+<p>누가-행전은 동일한 후원자인 데오빌로에게 헌정된 하나의 이부작 저작을 구성합니다.</p>
+<p>바울의 동료인 "의사 누가"라는 전통적인 식별은 사도행전의 "우리(we)" 단락들에 근거하는데, 이는 목격자의 1인칭 서술로 읽혀져 왔습니다.</p>
+<h4>레이몬드 브라운</h4>
+<p>브라운은 사도행전의 "우리" 단락들이 누가 저자 전통에 대한 가장 강력한 증거이지만, 그것들이 질문을 결정적으로 해결해주지는 않는다고 주장합니다.</p>
+<p>확실한 것은 저자가 헬레니즘 문학 전통에서 최고 수준의 역량을 갖춘 세련된 역사가이자 성경 해석자라는 점입니다.</p>
+<h4>바트 에르만</h4>
+<p>에르만은 누가-행전의 저자가 바울의 동료가 아니었음이 거의 확실하다고 주장하는데, 그 근거는 누가-행전의 신학이 주요 지점에서 실제 바울 서신과 상당히 다르기 때문입니다.</p>
+<p>루크 티모시 존슨은 누가 저자 전통을 진지하게 받아들이며, 누가-행전의 문체적 통일성, 의학 용어, 그리고 "우리" 단락들의 일관성이 바울의 동역자라는 누적된 증거를 구성한다고 주장합니다.</p>
+<p>라이트와 버드는 누가 저자직을 가장 역사적으로 타당한 해석으로 긍정합니다.</p>
+<h4>B. 서문과 헬레니즘 역사 서술</h4>
+<p>누가복음 1:1~4은 신약 정경에서 가장 중요한 서문입니다.</p>
+<p>격조 높은 아틱(Attic) 산문으로 기록된 이 서문은 복음서를 헬레니즘 역사 서술 전통 안에 명시적으로 위치시킵니다: 저자는 "그 모든 일을 근원부터 자세히 미루어 살폈으며" "차례대로(orderly account)" 쓰고 있다고 주장합니다.</p>
+<p>데이비드 드실바는 이 서문이 투키디데스와 폴리비오스 전승의 헬레니즘 역사 서문 관습을 따르고 있음을 보여줍니다.</p>
+<h4>III. 문학적 구조와 개요</h4>
+<p>누가의 구조는 갈릴리에서 예루살렘으로(1~19장), 그리고 예루살렘에서 로마로(사도행전) 향하는 프로그램화된 여정을 중심으로 조직됩니다.</p>
+<p>중앙의 "여행 서사" 또는 누가의 "대삽입(great insertion)"(9:51~19:44)은 복음서의 신학적 핵심이자 L-전승 자료의 가장 풍부한 원천을 구성합니다.</p>
+<p class="outline">— 1:1~4 데오빌로를 위한 서문 — 헬레니즘 역사 서술적 서문</p>
+<p class="outline">— 1:5~2:52 탄생 서사 — 수태 고지, 마리아의 찬가, 사가랴의 찬가, 탄생, 봉헌, 소년 예수</p>
+<p class="outline">— 3:1~4:13 준비: 요한, 세례, 족보, 시험 — 아담까지 거슬러 올라가는 보편적 족보; 40일간의 시험</p>
+<p class="outline">— 4:14~9:50 갈릴리 사역 — 나사렛 선언; 치유; 열두 제자 부름; 먹이심</p>
+<p class="outline">— 9:51~19:44 예루살렘으로의 여정 (대삽입) — 사마리아인; 선한 사마리아인; 마리아/마르다; 탕자; 삭개오</p>
+<p class="outline">— 19:45~21:38 예루살렘: 성전과 강화 — 성전 정화; 논쟁들; 종말론적 강화</p>
+<p class="outline">— 22:1~23:56 수난 서사 — 최후의 만찬; 겟세마네; 재판들; 십자가 처형; 매장</p>
+<p class="outline">— 24:1~53 부활 발현과 승천 — 빈 무덤; 엠마오 길; 예루살렘 발현; 승천</p>
+<h4>IV. 구조적 분석: 누가의 여행 서사</h4>
+<p>여행 서사(9:51~19:44)는 누가의 가장 독특한 구조적 기여이며 그의 가장 유명한 비유들이 위치한 곳입니다: 선한 사마리아인, 탕자, 부자와 나사로, 바리새인과 세리 비유입니다.</p>
+<p>브라운은 이 단락이 "여정"이라는 틀에도 불구하고 실제적인 지리적 움직임은 거의 포함하지 않는다는 점에 주목합니다 — 이는 여정 메타포가 일차적으로 지리적인 것이 아니라 영적이고 종말론적인 것임을 시사합니다: 예루살렘을 향한 여정은 곧 십자가를 향한 여정입니다.</p>
+<h4>루크 티모시 존슨</h4>
+<p>존슨은 '예루살렘으로의 여정'이 누가의 핵심 주장을 실현한다고 주장합니다: 구원은 정적인 소유물이 아니라, 하나님께서 결정적으로 행하시기로 선택하신 장소를 향한 하나님의 백성의 역동적인 움직임입니다.</p>
+<p>라이트와 버드는 여행 서사를 유대교의 순례 신학 맥락에 위치시킵니다: 제2성전기 유대교에서 예루살렘으로 올라가는 것은 언약적 신실함의 패러다임적 행위였습니다.</p>
+<p>누가의 예수는 이 여정을 결정적인 이스라엘 순례자로서 수행하며, 유배에서 돌아오는 이스라엘의 이야기를 재현합니다.</p>
+<h4>V. 핵심 주제</h4>
+<h4>A. 주변부 사람들을 위한 구원: 누가의 역전</h4>
+<p>누가의 가장 독특한 기여는 역전의 신학입니다. 마리아의 찬가는 그 프로그램을 선포합니다: "권세 있는 자를 그 위에서 내리치셨으며 비천한 자를 높이셨고."</p>
+<p>이것은 영적 가난에 대한 은유가 아니라 하나님의 자비가 향하는 자리에 대한 실질적인 주장입니다: 하나님의 나라는 주변부를 향해 움직입니다.</p>
+<h4>B. 성령과 기도</h4>
+<p>누가복음은 마가나 마태와는 비교할 수 없을 정도로 성령과 기도로 가득 차 있습니다.</p>
+<p>예수는 모든 주요 전환점마다 기도하시며, 성령은 내려오시고 말씀하시며 서사를 앞으로 밀어붙입니다.</p>
+<p>드실바는 누가에게 성령은 추상이 아니라 서사적 행위자라고 언급합니다.</p>
+<h4>C. 여성, 이방인, 그리고 사회적 외부인</h4>
+<p>누가는 다른 공관복음서들이 언급하지 않는 맥락에서 여성들을 언급합니다. 사마리아인들은 긍정적인 역할로 등장합니다.</p>
+<p>세리와 죄인들은 일관되게 은혜의 수혜자입니다.</p>
+<p>이것은 신학적 주장입니다: 하나님의 구원이 향하는 자리는 주변부, 배제된 자들, 그리고 의례적·사회적으로 불결한 자들입니다.</p>
+<h4>D. 예루살렘과 보편사</h4>
+<p>누가는 홀로 복음서를 보편사 안에 틀 지웁니다: 탄생 서사는 로마 제국의 인구 조사로 연대가 측정되고, 요한의 사역은 정치적 통치자들의 정교한 목록으로 연대가 매겨집니다.</p>
+<p>예수의 사역은 사적인 유대인들만의 사건이 아니라 온 세상(oikoumene)을 위한, 그리고 그 안에서의 사건입니다.</p>
+<h4>VI. 저자의 의도</h4>
+<p>누가의 집필 의도는 네 복음서 중 가장 명시적으로 서문에 진술되어 있습니다: 데오빌로가 "배운 바의 확실함"을 알게 하기 위해 "차례대로(orderly account)" 제공하는 것입니다.</p>
+<p>이러한 변증적-교리문답적 의도는 복음서의 모든 문학적 결정을 형성합니다.</p>
+<p>진술된 의도 너머에 있는 누가의 의제는 이스라엘의 하나님이 모든 민족의 하나님이라는 것, 예수의 사역이 이스라엘의 예언적 소망을 성취하는 동시에 그들의 민족적·의례적 한계를 부수어 연다는 것, 그리고 제자 공동체가 이스라엘의 언약적 정체성의 정당한 상속자임을 입증하는 것입니다.</p>
+<h4>VII. 각주</h4>
+<p>브라운, 『신약성경 개론』, 267~275.</p>
+<p>에르만, 『신약성경』, 128~138.</p>
+<p>존슨, 『신약성경의 기록들』, 213~229.</p>
+<p>드실바, 『신약성경 개론』, 271~298.</p>
+<p>라이트 및 버드, 『신약성경과 그 세계』, 560~575.</p>
+<p>투리드 칼슨 세임, 『이중 메시지: 누가-행전의 젠더 패턴』 (내슈빌: 아빙돈, 1994).</p>
+<p>데이비드 티데, 『누가-행전의 예언과 역사』 (필라델피아: 포트리스, 1980).</p>
+</div></div></section>
+<section class="tabPanel" id="t6"><div class="enContent"><div class="card"><h2>John — Logos, Signs, Belief, Life</h2><div class="core"><strong>Core:</strong> Jesus is the incarnate Logos whose signs and glory move readers from misunderstanding into active belief, life, abiding, and continuing witness.</div><h4>Lecture Narrative</h4>
+<p>John completes the fourfold Gospel sequence. Matthew, Mark, and Luke belong together as the Synoptic Gospels because they share wording, order, structure, and many common episodes. John stands apart. Its chronology, style, discourse pattern, symbolism, and theological presentation differ significantly from the Synoptic pattern.</p>
+<p>John begins not with genealogy, infancy, baptism, or public preaching, but with “In the beginning was the Word.” The key term λόγος / Logos means Word. John 1:1–18 functions as the theological lens for the whole Gospel. Jesus is the pre-existent Word who becomes flesh, the light that darkness cannot overcome, the one who reveals the Father. John’s high Christology is not escape from the world — “The Word became flesh” means God’s self-disclosure enters embodied human life.</p>
+<p>A Johannine sign is not merely a miracle. It is a visible event that points beyond itself to Jesus’ identity and glory. Water into wine reveals glory. Feeding the multitude leads to the Bread of Life discourse. Healing the man born blind reveals true sight. Raising Lazarus reveals Jesus as resurrection and life. Each sign asks: will the reader stop at the event, or move through the sign to belief?</p>
+<p>Misunderstanding is one of John’s major literary strategies. Characters misunderstand Jesus literally, and that misunderstanding becomes a doorway into deeper revelation. Nicodemus misunderstands new birth. The Samaritan woman misunderstands living water. The Farewell Discourse (John 13–17) prepares the community for Jesus’ departure through foot washing, the love commandment, abiding, vine and branches, and the promise of the Paraclete.</p>
+<p>John 20:31 gives the Gospel’s explicit purpose: “these things are written so that readers may believe that Jesus is the Messiah, the Son of God, and through believing may have life in his name.” John is a written space of encounter designed to move readers into belief and life.</p>
+<h4>I. Literary Overview</h4>
+<h4>II. Author, Date, and Provenance</h4>
+<h4>A. The Beloved Disciple and the Johannine School</h4>
+<p>John’s Gospel presents the most complex authorial situation of the four canonical gospels. The text itself attributes its testimony to “the disciple whom Jesus loved” (21:20–24), but neither names this figure nor identifies him with John the son of Zebedee. The external tradition, originating with Irenaeus, identifies the Beloved Disciple with the Apostle John and locates the gospel’s composition at Ephesus.</p>
+<p>Raymond Brown</p>
+<p>Brown argues for a multi-stage compositional process: a historical figure (the Beloved Disciple) who was a companion of Jesus but not one of the Twelve; a Johannine School or community that preserved and developed his tradition; a principal evangelist who composed the present gospel; and a redactor who added ch. 21 and possibly other passages.</p>
+<p>Bart Ehrman</p>
+<p>Ehrman is skeptical of the Beloved Disciple tradition. The figure is introduced only in ch. 13 and appears at the most theologically significant moments, suggesting he is more a literary/theological construction than a historical figure.</p>
+<p>Wright and Bird mount the most robust defense of apostolic tradition: the differences from the synoptics reflect not a later community’s theological projection but Jesus’s own self-presentation in different contexts. Johnson accepts the Johannine community model but resists radical discontinuity between the historical Jesus and the Johannine portrait.</p>
+<h4>B. The Crisis of Synagogue Expulsion</h4>
+<p>The most significant contextual datum for Johannine composition is the reference to “being put out of the synagogue” (aposynagogos: 9:22, 12:42, 16:2). Brown’s community history model reads John’s high Christology as the response to this expulsion: a community forced out of Israel’s covenant structures must assert that Jesus — the Logos — is the definitive locus of divine presence.</p>
+<h4>III. Literary Structure and Outline</h4>
+<p>John’s structure is the most elegantly chiastic and intentionally shaped of the four gospels. It divides into two major sections — the Book of Signs (chs. 1–12) and the Book of Glory (chs. 13–20) — framed by a Logos Prologue (1:1–18) and an Epilogue (ch. 21).</p>
+<p class="outline">— 1:1–18 Prologue: The Logos Hymn — Pre-existence, Incarnation, Witness of John</p>
+<p class="outline">— 1:19–51 Introduction: John’s Witness and First Disciples — Baptist’s testimony; Andrew, Peter, Philip, Nathanael</p>
+<p class="outline">— 2:1–4:54 Signs 1–2: Cana, Temple, Nicodemus, Samaritan Woman — Water to Wine; New Temple Body; Born Again; Living Water</p>
+<p class="outline">— 5:1–6:71 Signs 3–4: Healing, Feeding, Walking on Water — Sabbath controversy; Bread of Life discourse</p>
+<p class="outline">— 7:1–8:59 Controversy at Jerusalem: Light of the World — Tabernacles; Woman in Adultery; “Before Abraham was, I AM”</p>
+<p class="outline">— 9:1–10:42 Signs 5–6: Man Born Blind, Good Shepherd — Blindness/Sight; Shepherd discourse; Hanukkah</p>
+<p class="outline">— 11:1–12:50 Sign 7: Lazarus; Entry; “Hour” Approaches — Resurrection of Lazarus; Triumphal Entry; Greeks seek Jesus</p>
+<p class="outline">— 13:1–17:26 Book of Glory: Farewell Discourse and Prayer — Footwashing; Paraclete; “I am the Way”; High Priestly Prayer</p>
+<p class="outline">— 18:1–19:42 Passion Narrative — Arrest; Trials before Pilate; Crucifixion; Burial</p>
+<p class="outline">— 20:1–31 Resurrection Appearances in Jerusalem — Empty Tomb; Mary; Thomas; Purpose Statement</p>
+<p class="outline">— 21:1–25 Epilogue: Sea of Tiberias and Restoration of Peter — Third appearance; Peter’s rehabilitation; Beloved Disciple</p>
+<h4>IV. Structural Analysis: Signs, Discourses, and the Logos Prologue</h4>
+<h4>A. The Seven Signs</h4>
+<p>John’s “signs” (sēmeia) are the theological engine of the Book of Signs. Unlike the synoptic miracles, which are primarily acts of compassion and Kingdom proclamation, John’s signs are revelatory events that disclose who Jesus is: each sign is followed by an extended discourse that unpacks its Christological meaning. Brown identifies seven signs corresponding to the seven days of creation — John’s gospel is a new-creation narrative structured like Genesis.</p>
+<p>N.T. Wright &amp; Michael Bird</p>
+<p>Wright reads the seven signs through the lens of Israel’s eschatological expectations: Jesus performs the signs that Isaiah predicted the Messiah would perform in the age of restoration. The signs are covenantal fulfillments — the enacted inauguration of new creation.</p>
+<h4>B. The Logos Prologue</h4>
+<p>The Prologue (1:1–18) is among the most dense paragraphs in ancient literature. Its opening (“In the beginning was the Logos”) echoes Genesis 1:1, placing the incarnation within the framework of creation and new creation. Logos was a concept familiar to both Hellenistic philosophy and Jewish wisdom theology.</p>
+<p>David deSilva</p>
+<p>deSilva’s social-rhetorical reading of the Prologue emphasizes its function as a ‘map of significance’ for the entire narrative: the reader who has heard the Prologue knows who Jesus is before the narrative begins.</p>
+<h4>V. Core Themes</h4>
+<h4>A. Realized Eschatology: Eternal Life as Present Possession</h4>
+<p>John’s eschatology is strikingly realized in comparison to the synoptics: the hour “is coming and now is” when the dead will hear the voice of the Son of God. Eternal life (zoē aionios) is not primarily future but present. The judgment is already happening in the response to Jesus.</p>
+<h4>B. The I AM Sayings</h4>
+<p>John’s seven “I AM” declarations with predicates are unique to this gospel and constitute its most explicit Christological claims. The absolute “I AM” sayings without predicates echo the divine self-identification of Exodus 3:14 and Isaiah 43:10–13.</p>
+<h4>C. The Paraclete and the Continuation of the Mission</h4>
+<p>The Farewell Discourse introduces the Paraclete (parakletos: advocate, counselor, comforter) as the one who will “guide into all truth” after Jesus’s departure. Johnson reads the Paraclete as the hermeneutical principle of the Johannine community.</p>
+<h4>D. Love as the New Commandment</h4>
+<p>John’s “new commandment” (“Love one another as I have loved you”) is intensified by the standard of love — kenotic, cross-shaped love — and by its communal specificity. Wright and Ehrman agree that this inward focus on community love reflects the post-synagogue-expulsion context.</p>
+<h4>VI. Author’s Intent</h4>
+<p>John’s purpose statement is embedded in the text: “These are written so that you may believe that Jesus is the Messiah, the Son of God, and that through believing you may have life in his name” (20:30–31). The Johannine compositional intent is simultaneously catechetical, apologetic, and mystical.</p>
+<p>Read in its late first-century community setting, John may be heard as a Gospel written for a community experiencing exclusion from synagogue life. Its central claim is that divine presence is not lost, because the Logos has tabernacled among them and continues to form a community of belief, love, life, and witness.</p>
+<h4>VII. Footnotes</h4>
+<p>1. Raymond E. Brown, The Gospel According to John, 2 vols., Anchor Bible (Garden City: Doubleday, 1966–70); The Community of the Beloved Disciple (New York: Paulist, 1979).</p>
+<p>2. Ehrman, The New Testament, 157–171.</p>
+<p>3. Wright and Bird, The New Testament in Its World, 636–660.</p>
+<p>4. Johnson, Writings of the New Testament, 491–526.</p>
+<p>5. deSilva, Introduction to the New Testament, 391–430.</p>
+<p>6. J. Louis Martyn, History and Theology in the Fourth Gospel, 3rd ed. (Louisville: Westminster John Knox, 2003).</p>
+<p>7. Andreas Köstenberger, A Theology of John’s Gospel and Letters (Grand Rapids: Zondervan, 2009).</p></div></div><div class="koContent ko"><div class="card"><h2>요한복음 — 로고스, 표적, 믿음, 생명</h2>
+<p>강의 서사</p>
+<p>요한복음은 사중 복음서의 순서를 완성합니다. 마태, 마가, 누가는 어휘, 순서, 구조, 그리고 많은 공통 에피소드를 공유하기 때문에 공관복음으로 함께 묶입니다.</p>
+<p>요한복음은 따로 서 있습니다. 요한복음의 연대기, 문체, 담화 패턴, 상징주의, 그리고 신학적 제시는 공관복음의 패턴과 현저히 다릅니다.</p>
+<p>요한복음은 족보나 유년 시절, 세례나 공개 설교로 시작하지 않고, "태초에 말씀이 계시니라"로 시작합니다.</p>
+<p>핵심 용어인 'λόγος / Logos'는 말씀을 의미합니다. 요한복음 1:1~18은 복음서 전체를 위한 신학적 렌즈 역할을 합니다.</p>
+<p>예수는 육신이 되신 선제적(pre-existent) 말씀이며, 어둠이 이길 수 없는 빛이요, 아버지를 계시하는 분입니다.</p>
+<p>요한의 높은 기독론은 세상으로부터의 도피가 아닙니다 — "말씀이 육신이 되었다"는 것은 하나님의 자기 계시가 체화된 인간의 삶 속으로 들어왔음을 의미합니다.</p>
+<p>요한복음의 '표적(sign)'은 단순한 기적이 아닙니다. 그것은 그 자체를 넘어 예수의 정체성과 영광을 가리키는 가시적인 사건입니다.</p>
+<p>물이 포도주가 되는 것은 영광을 드러냅니다. 군중을 먹이시는 것은 '생명의 떡' 강화로 이어집니다.</p>
+<p>날 때부터 맹인 된 사람을 고치시는 것은 참된 시력을 드러냅니다. 나사로를 살리시는 것은 예수를 부활이요 생명으로 드러냅니다.</p>
+<p>각 표적은 독자에게 묻습니다: 당신은 그 사건에 머물 것입니까, 아니면 표적을 통과하여 믿음으로 나아갈 것입니까?</p>
+<p>'오해'는 요한의 주요한 문학적 전략 중 하나입니다. 인물들은 예수의 말씀을 문자 그대로 오해하며, 그 오해는 더 깊은 계시로 들어가는 통로가 됩니다.</p>
+<p>니고데모는 거듭남을 오해합니다. 사마리아 여인은 생수를 오해합니다.</p>
+<p>고별 강화(요한복음 13~17장)는 발 씻기심, 사랑의 이중 계명, 거함(abiding), 포도나무와 가지, 그리고 파라클레토스(보혜사)의 약속을 통해 공동체가 예수의 떠나심에 대비하게 합니다.</p>
+<p>요한복음 20:31은 복음서의 명시적인 목적을 제시합니다: "오직 이것을 기록함은 너희로 예수께서 하나님의 아들 그리스도이심을 믿게 하려 함이요 또 너희로 믿고 그 이름을 힘입어 생명을 얻게 하려 함이니라."</p>
+<p>요한복음은 독자들을 믿음과 생명으로 옮기기 위해 설계된, 기록된 만남의 공간입니다.</p>
+<div class="core"><strong>핵심 문장:</strong> 요한은 예수가 성육신하신 로고스이며, 그의 표적과 영광이 독자들을 오해로부터 능동적인 믿음, 생명, 거함, 그리고 지속적인 증언으로 옮겨가게 함을 가르친다.</div>
+<h4>I. 문학적 개요</h4>
+<table><tr><th>분야</th><th>데이터</th><th>출처 근거</th><th>합의 사항</th><th>논쟁 사항</th></tr><tr><td>저자</td><td>사랑하시는 제자 (요한으로 전승됨)</td><td>21:24; 이레네우스; 교부 전승</td><td>전통적으로 사도 요한</td><td>에르만/브라운: 요한 학파</td></tr><tr><td>연대</td><td>주후 90~100년경</td><td>회당 출교 이후; 높은 기독론</td><td>거의 합의됨</td><td>일부 학자: 주후 80~85년</td></tr><tr><td>출처</td><td>에베소 (다수설)</td><td>이레네우스; 이그나티우스와의 유사성</td><td>다수설</td><td>시리아 혹은 알렉산드리아 가능성</td></tr><tr><td>언어</td><td>단순하지만 심오한 헬라어</td><td>아람어적 기저; 이중 언어 사용자 저자</td><td>만장일치</td><td>—</td></tr><tr><td>분량</td><td>21장, 879절</td><td>두 권의 책 + 에필로그 구조</td><td>만장일치</td><td>7:53~8:11 논란</td></tr></table>
+<h4>II. 저자, 연대, 및 기록 배경</h4>
+<h4>A. 사랑하시는 제자와 요한 학파</h4>
+<p>요한복음은 네 정경 복음서 중 저자 상황이 가장 복잡하다.</p>
+<p>텍스트 자체는 그 증언을 "예수께서 사랑하시던 그 제자"(21:20~24)의 것으로 돌리지만, 이 인물의 이름을 밝히거나 그를 세베대의 아들 요한과 동일시하지는 않는다.</p>
+<p>이레네우스로부터 시작된 외부 전승은 사랑하시는 제자를 사도 요한과 동일시하며 복음서의 집필지를 에베소로 비정한다.</p>
+<h4>레이몬드 브라운</h4>
+<p>브라운은 다단계 집필 과정을 주장한다: 12제자 중 하나는 아니었으나 예수의 동료였던 역사적 인물(사랑하시는 제자), 그의 전승을 보존하고 발전시킨 요한 학파 혹은 공동체, 현재의 복음서를 집필한 주요 복음서 기자, 그리고 21장과 아마도 다른 구절들을 추가한 편집자이다.</p>
+<h4>바트 에르만</h4>
+<p>에르만은 사랑하시는 제자 전통에 대해 회의적이다. 이 인물은 13장에서야 도입되며 가장 신학적으로 중요한 순간에만 등장하는데, 이는 그가 역사적 인물이라기보다 문학적/신학적 구성물임을 시사한다.</p>
+<p>라이트와 버드는 사도적 전통을 강력하게 옹호한다: 공관복음과의 차이점은 후대 공동체의 신학적 투영이 아니라, 서로 다른 맥락에서 나타난 예수 자신의 자기 제시를 반영한다는 것이다.</p>
+<p>존슨은 요한 공동체 모델을 받아들이지만, 역사적 예수와 요한적 초상 사이의 급격한 불연속성에는 저항한다.</p>
+<h4>B. 회당 출교의 위기</h4>
+<p>요한복음 집필의 가장 중요한 맥락적 자료는 "회당에서 쫓겨남(aposynagogos: 9:22, 12:42, 16:2)"에 대한 언급이다.</p>
+<p>브라운의 공동체 역사 모델은 요한의 높은 기독론을 이 출교에 대한 응답으로 읽는다: 이스라엘의 언약 구조로부터 강제로 쫓겨난 공동체는 예수 — 즉 로고스 — 가 신성한 임재의 결정적인 장소(locus)임을 주장해야만 했다는 것이다.</p>
+<h4>III. 문학적 구조와 개요</h4>
+<p>요한복음의 구조는 네 복음서 중 가장 우아하게 교차 대칭적(chiastic)이며 의도적으로 형성되어 있다.</p>
+<p>복음서는 로고스 서문(1:1~18)과 에필로그(21장)로 틀이 잡힌 두 개의 주요 부분 — 표적의 책(1~12장)과 영광의 책(13~20장) — 으로 나뉜다.</p>
+<p class="outline">— 1:1~18 서문: 로고스 찬가 — 선제성, 성육신, 요한의 증언</p>
+<p class="outline">— 1:19~51 도입: 요한의 증언과 첫 제자들 — 세례 요한의 증언; 안드레, 베드로, 빌립, 나다나엘</p>
+<p class="outline">— 2:1~4:54 표적 1~2: 가나, 성전, 니고데모, 사마리아 여인 — 물이 포도주로; 새로운 성전 몸; 거듭남; 생수</p>
+<p class="outline">— 5:1~6:71 표적 3~4: 치유, 먹이심, 바다 위를 걸으심 — 안식일 논쟁; 생명의 떡 강화</p>
+<p class="outline">— 7:1~8:59 예루살렘에서의 논쟁: 세상의 빛 — 초막절; 간음한 여인; "아브라함이 나기 전부터 내가 있느니라(I AM)"</p>
+<p class="outline">— 9:1~10:42 표적 5~6: 날 때부터 맹인 된 사람, 선한 목자 — 맹목/시력; 목자 강화; 수전절</p>
+<p class="outline">— 11:1~12:50 표적 7: 나사로; 입성; "때"가 다가옴 — 나사로의 부활; 예루살렘 입성; 헬라인들이 예수를 찾음</p>
+<p class="outline">— 13:1~17:26 영광의 책: 고별 강화와 기도 — 발 씻기심; 파라클레토스; "내가 곧 길이요"; 대제사장적 기도</p>
+<p class="outline">— 18:1~19:42 수난 서사 — 체포; 빌라도 앞에서의 재판; 십자가 처형; 매장</p>
+<p class="outline">— 20:1~31 부활 발현 — 빈 무덤; 마리아; 도마; 기록 목적 진술</p>
+<p class="outline">— 21:1~25 에필로그: 디베랴 바다와 베드로의 회복 — 세 번째 발현; 베드로의 복권; 사랑하시는 제자</p>
+<h4>IV. 구조적 분석: 표적, 강화, 그리고 로고스 서문</h4>
+<h4>A. 일곱 개의 표적</h4>
+<p>요한의 '표적(sēmeia)'은 '표적의 책'을 이끄는 신학적 엔진이다.</p>
+<p>일차적으로 자비의 행위이자 하나님 나라 선포인 공관복음의 기적들과 달리, 요한의 표적들은 예수의 정체성을 드러내는 계시적 사건들이다: 각 표적 뒤에는 그 기독론적 의미를 풀어내는 확장된 강화가 뒤따른다.</p>
+<p>브라운은 창조의 7일에 대응하는 일곱 개의 표적을 식별한다 — 요한복음은 창세기와 같이 구조화된 새 창조 서사이다.</p>
+<h4>N.T. 라이트 &amp; 마이클 버드</h4>
+<p>라이트는 일곱 개의 표적을 이스라엘의 종말론적 기대라는 렌즈를 통해 읽는다: 예수는 이사야가 회복의 때에 메시아가 행할 것이라고 예언했던 표적들을 행하신다.</p>
+<p>표적들은 언약적 성취이며, 새 창조의 제정된 시작이다.</p>
+<h4>B. 로고스 서문</h4>
+<p>서문(1:1~18)은 고대 문헌 중 가장 밀도 높은 단락 중 하나이다.</p>
+<p>그 도입부("태초에 로고스가 계시니라")는 창세기 1:1을 반향하며, 성육신을 창조와 새 창조의 틀 안에 위치시킨다.</p>
+<p>로고스는 헬레니즘 철학과 유대 지혜 신학 모두에게 친숙한 개념이었다.</p>
+<h4>데이비드 드실바</h4>
+<p>드실바의 사회-수사학적 서문 읽기는 전체 서사를 위한 '의미의 지도'로서의 기능을 강조한다: 서문을 들은 독자는 서사가 시작되기 전에 예수가 누구인지 알게 된다.</p>
+<h4>V. 핵심 주제</h4>
+<h4>A. 실현된 종말론: 현재적 소유로서의 영생</h4>
+<p>요한의 종말론은 공관복음과 비교할 때 두드러지게 실현되어 있다: 죽은 자들이 하나님의 아들의 음성을 들을 때가 "오나니 곧 이때라."</p>
+<p>영생(zoē aionios)은 일차적으로 미래의 것이 아니라 현재의 것이다. 심판은 이미 예수에 대한 응답 속에서 일어나고 있다.</p>
+<h4>B. "내가 ... 이니라(I AM)" 말씀들</h4>
+<p>서술어가 포함된 요한의 일곱 가지 "I AM" 선언은 이 복음서에만 독특하며 가장 명시적인 기독론적 주장을 구성한다.</p>
+<p>서술어가 없는 절대적인 "I AM" 말씀들은 출애굽기 3:14과 이사야 43:10~13의 신적 자기 식별을 반향한다.</p>
+<h4>C. 파라클레토스와 선교의 지속</h4>
+<p>고별 강화는 파라클레토스(parakletos: 변호자, 상담자, 위로자)를 예수의 떠나심 이후에 "모든 진리 가운데로 인도할" 분으로 소개한다.</p>
+<p>존슨은 파라클레토스를 요한 공동체의 해석학적 원리로 읽는다.</p>
+<h4>D. 새 계명으로서의 사랑</h4>
+<p>요한의 "새 계명"("내가 너희를 사랑한 것 같이 너희도 서로 사랑하라")은 그 사랑의 표준 — 자기 비움적(kenotic)이고 십자가 모양인 사랑 — 과 공동체적 구체성에 의해 강화된다.</p>
+<p>라이트와 에르만은 공동체 내부의 사랑에 대한 이러한 집중이 회당 출교 이후의 맥락을 반영한다는 데 동의한다.</p>
+<h4>VI. 저자의 의도</h4>
+<p>요한의 목적 진술은 텍스트 안에 내장되어 있다: "오직 이것을 기록함은 너희로 예수께서 하나님의 아들 그리스도이심을 믿게 하려 함이요 또 너희로 믿고 그 이름을 힘입어 생명을 얻게 하려 함이니라" (20:30~31).</p>
+<p>요한의 집필 의도는 동시에 교리문답적이며, 변증적이고, 신비적이다.</p>
+<p>요한복음의 공동체는 회당에서 쫓겨난 경험 속에서도, 성육신하신 로고스가 그들 가운데 거하셨기에 자신들의 공동체가 하나님의 임재를 증언하는 자리가 되었음을 고백한다.</p>
+<h4>VII. 각주</h4>
+<p>레이몬드 E. 브라운, 『요한복음』, 2권, 앵커 바이블 (가든 시티: 더블데이, 1966~70); 『사랑하시는 제자의 공동체』 (뉴욕: 파울리스트, 1979).</p>
+<p>에르만, 『신약성경』, 157~171.</p>
+<p>라이트 및 버드, 『신약성경과 그 세계』, 636~660.</p>
+<p>존슨, 『신약성경의 기록들』, 491~526.</p>
+<p>드실바, 『신약성경 개론』, 391~430.</p>
+<p>J. 루이스 마틴, 『요한복음의 역사와 신학』, 제3판 (루이빌: 웨스트민스터 존 녹스, 2003).</p>
+<p>안드레아스 쾨스텐베르거, 『요한복음과 서신서 신학』 (그랜드래피즈: 존더반, 2009).</p>
+</div></div></section>
+<section class="tabPanel" id="t7"><div class="enContent"><div class="card"><h2>7-Question Self-Assessment</h2><div class="q" data-answer="1"><h4>Q1. What is the best description of the New Testament in this Week 9 manuscript?</h4><label><input name="q1" type="radio" value="0"/> A random anthology of early Christian religious essays</label><label><input name="q1" type="radio" value="1"/> The written form of the early Christian movement’s living covenantal witness to Jesus</label><label><input name="q1" type="radio" value="2"/> A modern transcript of Jesus’ exact words without interpretation</label><label><input name="q1" type="radio" value="3"/> A philosophical system detached from Israel’s Scriptures</label><p class="explain">The manuscript repeatedly frames the New Testament as covenantal memory and written witness.</p></div>
+<div class="q" data-answer="1"><h4>Q2. Why should the four Gospels not be flattened into one harmonized biography?</h4><label><input name="q2" type="radio" value="0"/> Because they contradict one another beyond usefulness</label><label><input name="q2" type="radio" value="1"/> Because each Gospel is a distinct literary witness that forms a community differently</label><label><input name="q2" type="radio" value="2"/> Because only John is historically reliable</label><label><input name="q2" type="radio" value="3"/> Because Mark replaces Matthew and Luke</label><p class="explain">The manuscript teaches vertical reading before horizontal comparison.</p></div>
+<div class="q" data-answer="2"><h4>Q3. What does Marcan Priority mean?</h4><label><input name="q3" type="radio" value="0"/> Matthew was written first and Mark copied Matthew</label><label><input name="q3" type="radio" value="1"/> John was the earliest Gospel</label><label><input name="q3" type="radio" value="2"/> Mark was likely written first and used by Matthew and Luke</label><label><input name="q3" type="radio" value="3"/> Luke invented the Synoptic tradition</label><p class="explain">Mark functions as the dominant working model and narrative skeleton for Matthew and Luke.</p></div>
+<div class="q" data-answer="1"><h4>Q4. What is Q in the Two-Source Theory?</h4><label><input name="q4" type="radio" value="0"/> A discovered manuscript of Jesus’ miracles</label><label><input name="q4" type="radio" value="1"/> A hypothetical sayings source used to explain Matthew-Luke material absent from Mark</label><label><input name="q4" type="radio" value="2"/> A Roman legal document</label><label><input name="q4" type="radio" value="3"/> A later ending of Mark</label><p class="explain">Q comes from Quelle and must be taught carefully as a hypothesis.</p></div>
+<div class="q" data-answer="0"><h4>Q5. Which sentence best captures Mark’s core witness?</h4><label><input name="q5" type="radio" value="0"/> Jesus is known truly through the cross, and discipleship means following the suffering Son of Man</label><label><input name="q5" type="radio" value="1"/> Jesus is primarily a wisdom teacher detached from suffering</label><label><input name="q5" type="radio" value="2"/> Jesus abolishes Israel’s story</label><label><input name="q5" type="radio" value="3"/> Jesus reveals no kingdom urgency</label><p class="explain">Mark’s narrative road moves toward the cross: suffering, service, ransom, and witness.</p></div>
+<div class="q" data-answer="1"><h4>Q6. Which sentence best captures Matthew’s core witness?</h4><label><input name="q6" type="radio" value="0"/> Jesus rejects Israel and begins a completely unrelated religion</label><label><input name="q6" type="radio" value="1"/> Jesus fulfills Israel’s story, forms kingdom righteousness, and sends the community to all nations</label><label><input name="q6" type="radio" value="2"/> Jesus is only a private spiritual teacher</label><label><input name="q6" type="radio" value="3"/> Matthew has no concern for community formation</label><p class="explain">Matthew centers fulfillment, five discourses, ekklesia, righteousness, and mission.</p></div>
+<div class="q" data-answer="1"><h4>Q7. Which sentence best captures Luke and John together?</h4><label><input name="q7" type="radio" value="0"/> Luke centers elite purity; John rejects embodiment</label><label><input name="q7" type="radio" value="1"/> Luke moves mercy toward margins; John moves readers from signs into belief, life, abiding, and witness</label><label><input name="q7" type="radio" value="2"/> Luke ignores the Spirit; John ignores love</label><label><input name="q7" type="radio" value="3"/> Both reject Israel’s Scriptures</label><p class="explain">Luke emphasizes Spirit-led mercy/reversal; John emphasizes Logos, signs, belief, life, and abiding witness.</p></div><button class="gradeBtn">Grade MCQ</button><p class="score"></p></div></div><div class="koContent ko"><div class="card"><h2>7문항 자기 점검</h2><div class="q" data-answer="1"><h4>Q1. 이 9주차 원고가 설명하는 신약성경의 가장 적절한 정의는 무엇인가?</h4><label><input name="qk1" type="radio" value="0"/> A. 초기 기독교 종교 에세이의 무작위 모음</label><label><input name="qk1" type="radio" value="1"/> B. 예수에 대한 초기 그리스도인 운동의 살아 있는 언약적 증언이 기록된 형태</label><label><input name="qk1" type="radio" value="2"/> C. 예수의 말을 해석 없이 그대로 옮긴 현대식 속기록</label><label><input name="qk1" type="radio" value="3"/> D. 이스라엘 성경과 분리된 철학 체계</label><p class="explain">원고는 신약을 반복해서 언약 기억과 기록된 증언으로 설명합니다.</p></div><div class="q" data-answer="1"><h4>Q2. 네 복음서를 하나의 조화된 전기로 단순화하면 안 되는 이유는 무엇인가?</h4><label><input name="qk2" type="radio" value="0"/> A. 서로 완전히 모순되어 유익하지 않기 때문에</label><label><input name="qk2" type="radio" value="1"/> B. 각 복음서가 공동체를 다르게 형성하는 고유한 문학적 증언이기 때문에</label><label><input name="qk2" type="radio" value="2"/> C. 요한복음만 역사적으로 신뢰할 수 있기 때문에</label><label><input name="qk2" type="radio" value="3"/> D. 마가복음이 마태와 누가를 대체하기 때문에</label><p class="explain">원고는 가로 비교 전에 각 복음서를 세로로 읽도록 가르칩니다.</p></div><div class="q" data-answer="2"><h4>Q3. 마가 우선설은 무엇을 뜻하는가?</h4><label><input name="qk3" type="radio" value="0"/> A. 마태가 먼저 쓰였고 마가가 마태를 베꼈다는 뜻</label><label><input name="qk3" type="radio" value="1"/> B. 요한복음이 가장 이른 복음서라는 뜻</label><label><input name="qk3" type="radio" value="2"/> C. 마가가 먼저 기록되었고 마태와 누가가 마가를 사용했을 가능성이 높다는 뜻</label><label><input name="qk3" type="radio" value="3"/> D. 누가가 공관복음 전승을 창작했다는 뜻</label><p class="explain">마가는 마태와 누가의 주요 서사 골격으로 기능합니다.</p></div><div class="q" data-answer="1"><h4>Q4. 두 자료설에서 Q는 무엇인가?</h4><label><input name="qk4" type="radio" value="0"/> A. 발견된 예수의 기적 문서</label><label><input name="qk4" type="radio" value="1"/> B. 마가에는 없지만 마태와 누가가 공유하는 자료를 설명하기 위한 가설적 말씀 자료</label><label><input name="qk4" type="radio" value="2"/> C. 로마 법률 문서</label><label><input name="qk4" type="radio" value="3"/> D. 마가복음의 긴 결말</label><p class="explain">Q는 Quelle에서 온 말이며, 발견된 문서가 아니라 가설로 다루어야 합니다.</p></div><div class="q" data-answer="0"><h4>Q5. 마가복음의 핵심 증언을 가장 잘 설명하는 문장은?</h4><label><input name="qk5" type="radio" value="0"/> A. 예수는 십자가를 통해 참으로 알려지며, 제자도는 고난받는 인자를 따르는 것이다.</label><label><input name="qk5" type="radio" value="1"/> B. 예수는 고난과 분리된 지혜 교사일 뿐이다.</label><label><input name="qk5" type="radio" value="2"/> C. 예수는 이스라엘 이야기를 폐기한다.</label><label><input name="qk5" type="radio" value="3"/> D. 예수는 하나님 나라의 긴박성을 드러내지 않는다.</label><p class="explain">마가는 십자가, 섬김, 대속, 증언의 길로 독자를 이끕니다.</p></div><div class="q" data-answer="1"><h4>Q6. 마태복음의 핵심 증언을 가장 잘 설명하는 문장은?</h4><label><input name="qk6" type="radio" value="0"/> A. 예수는 이스라엘을 거부하고 완전히 무관한 새 종교를 시작한다.</label><label><input name="qk6" type="radio" value="1"/> B. 예수는 이스라엘의 이야기를 성취하고 하나님 나라의 의를 형성하며 공동체를 모든 민족에게 보낸다.</label><label><input name="qk6" type="radio" value="2"/> C. 예수는 개인적인 영성 교사일 뿐이다.</label><label><input name="qk6" type="radio" value="3"/> D. 마태는 공동체 형성에 관심이 없다.</label><p class="explain">마태는 성취, 다섯 강화, 에클레시아, 의, 선교를 중심에 둡니다.</p></div><div class="q" data-answer="1"><h4>Q7. 누가와 요한을 함께 가장 잘 설명하는 문장은?</h4><label><input name="qk7" type="radio" value="0"/> A. 누가는 엘리트 정결을 중심에 두고, 요한은 몸을 부정한다.</label><label><input name="qk7" type="radio" value="1"/> B. 누가는 긍휼을 주변부로 이동시키고, 요한은 독자를 표적에서 믿음과 생명과 거함과 증언으로 이동시킨다.</label><label><input name="qk7" type="radio" value="2"/> C. 누가는 성령을 무시하고, 요한은 사랑을 무시한다.</label><label><input name="qk7" type="radio" value="3"/> D. 둘 다 이스라엘 성경을 거부한다.</label><p class="explain">누가는 성령이 이끄는 긍휼과 역전을, 요한은 로고스, 표적, 믿음, 생명, 거함의 증언을 강조합니다.</p></div><button class="gradeBtn">퀴즈 채점</button><p class="score"></p></div></div></section>
+<section class="tabPanel" id="t8"><div class="enContent"><div class="card"><h2>Reflection &amp; Completion</h2><div class="checklist"><label><input type="checkbox"/> I read each Gospel vertically before comparing horizontally.</label><label><input type="checkbox"/> I can explain the Synoptic Problem, Marcan Priority, Q, M, and L.</label><label><input type="checkbox"/> I can state Mark, Matthew, Luke, and John’s distinct witness.</label><label><input type="checkbox"/> I completed the Future Self formation sentences.</label></div><h3>Formation Exercise</h3><p>Complete each sentence:</p><textarea id="r1" placeholder="Because I have read Mark, I now understand discipleship as…"></textarea><textarea id="r2" placeholder="Because I have read Matthew, I now understand righteousness as…"></textarea><textarea id="r3" placeholder="Because I have read Luke, I now understand mercy as…"></textarea><textarea id="r4" placeholder="Because I have read John, I now understand belief as…"></textarea><textarea id="r5" placeholder="To what outside space is the fourfold Gospel witness sending us now?"></textarea></div></div><div class="koContent ko"><div class="card"><h2>성찰과 완료</h2><div class="checklist"><label><input type="checkbox"/> 나는 각 복음서를 먼저 세로로 읽은 뒤 가로로 비교했다.</label><label><input type="checkbox"/> 나는 공관복음 문제, 마가 우선설, Q, M, L을 설명할 수 있다.</label><label><input type="checkbox"/> 나는 마가, 마태, 누가, 요한의 고유한 증언을 말할 수 있다.</label><label><input type="checkbox"/> 나는 형성 문장 쓰기를 완료했다.</label></div><h3>형성 연습</h3><p>각 문장을 완성하세요.</p><textarea id="kr1" placeholder="마가복음을 읽은 후, 나는 제자도를 …로 이해하게 되었다."></textarea><textarea id="kr2" placeholder="마태복음을 읽은 후, 나는 의를 …로 이해하게 되었다."></textarea><textarea id="kr3" placeholder="누가복음을 읽은 후, 나는 긍휼을 …로 이해하게 되었다."></textarea><textarea id="kr4" placeholder="요한복음을 읽은 후, 나는 믿음을 …로 이해하게 되었다."></textarea><textarea id="kr5" placeholder="사복음서의 증언은 지금 우리를 어떤 바깥 공간으로 보내는가?"></textarea></div></div></section>
+</main>
+<script>
+const tabs=document.querySelectorAll('nav button');
+const panels=document.querySelectorAll('.tabPanel');
+const enBtn=document.getElementById('enBtn');
+const koBtn=document.getElementById('koBtn');
+function setLanguage(lang){ const korean = lang === 'ko'; document.body.classList.toggle('korean', korean); document.documentElement.lang = korean ? 'ko' : 'en'; enBtn.classList.toggle('active', !korean); koBtn.classList.toggle('active', korean); document.querySelectorAll('nav button[data-en]').forEach(btn=>{btn.textContent = korean ? btn.dataset.ko : btn.dataset.en;}); localStorage.setItem('w9_lang', lang);
+}
+tabs.forEach(b=>b.addEventListener('click',()=>{ tabs.forEach(x=>x.classList.remove('active')); panels.forEach(p=>p.classList.remove('active')); b.classList.add('active'); document.getElementById(b.dataset.tab).classList.add('active');
+}));
+enBtn.addEventListener('click',()=>setLanguage('en'));
+koBtn.addEventListener('click',()=>setLanguage('ko'));
+setLanguage(localStorage.getItem('w9_lang') || 'en');
+document.querySelectorAll('textarea[id]').forEach(el=>{ const key='w9_'+el.id; el.value=localStorage.getItem(key)||''; el.addEventListener('input',()=>localStorage.setItem(key,el.value));
+});
+document.querySelectorAll('.gradeBtn').forEach(btn=>btn.addEventListener('click',()=>{ const wrapper = btn.closest('.enContent,.koContent') || btn.closest('.tabPanel'); let correct=0,total=0; wrapper.querySelectorAll('.q').forEach(q=>{ total++; const a=q.dataset.answer; const sel=q.querySelector('input:checked'); if(sel&&sel.value===a) correct++; const ex=q.querySelector('.explain'); if(ex) ex.style.display='block'; }); const score=wrapper.querySelector('.score'); if(score) score.textContent=(document.body.classList.contains('korean')?'점수: ':'Score: ')+correct+' / '+total;
+}));
+</script>
+</body></html>
